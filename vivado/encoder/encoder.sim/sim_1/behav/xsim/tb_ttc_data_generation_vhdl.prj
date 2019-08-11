@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../../ttc_encoder/ttc_data_generation.vhd" \
+"../../../../../../tb/tb_ttc_data_generation.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,2761 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sat Oct  6 16:15:05 2018
+# Process ID: 15612
+# Current directory: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22304 C:\Users\hanie\Documents\project\2018_10_03_ttctx2ttcrx\vivado\encoder\encoder.xpr
+# Log file: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/vivado.log
+# Journal file: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.1/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:09 . Memory (MB): peak = 882.453 ; gain = 132.594
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sat Oct  6 16:16:20 2018] Launched synth_1...
+Run output will be captured here: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.runs/synth_1/runme.log
+[Sat Oct  6 16:16:20 2018] Launched impl_1...
+Run output will be captured here: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.runs/impl_1/runme.log
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_top_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/ttc_encoder/ttc_data_generation.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ttc_data_generation
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto c5fa44d5fb1046d0b321c20e8140b53c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling architecture mmcme2_adv_v of entity unisim.MMCME2_ADV [\MMCME2_ADV(clkfbout_mult_f=25.0...]
+Compiling architecture mmcm_adv_v of entity unisim.MMCM_ADV [\MMCM_ADV(clkfbout_mult_f=25.0,c...]
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture xilinx of entity xil_defaultlib.pll_160MHz [pll_160mhz_default]
+Compiling architecture behavioral of entity xil_defaultlib.cdr2a_b_clk [cdr2a_b_clk_default]
+Compiling architecture arc of entity xil_defaultlib.serialb_com [\serialb_com(include_hamming=tru...]
+Compiling architecture core of entity xil_defaultlib.ttc_decoder_core [ttc_decoder_core_default]
+Compiling architecture top of entity xil_defaultlib.ttc_fmc_wrapper [ttc_fmc_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttc_data_generation [ttc_data_generation_default]
+Compiling architecture rtl of entity xil_defaultlib.d_ff [d_ff_default]
+Compiling architecture ibufds_v of entity unisim.IBUFDS [\IBUFDS(iostandard="default")(1,...]
+Compiling architecture mmcme2_adv_v of entity unisim.MMCME2_ADV [\MMCME2_ADV(bandwidth="optimized...]
+Compiling architecture structure of entity xil_defaultlib.mmcm [mmcm_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttcvi_encoder [\ttcvi_encoder(include_hamming=t...]
+Compiling architecture behavioral of entity xil_defaultlib.ttcvi_emulation [ttcvi_emulation_default]
+Compiling architecture rtl of entity xil_defaultlib.jk_ff [jk_ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttcvx_emulation [ttcvx_emulation_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttc_enc_wrapper [ttc_enc_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttc_encoder_data_gen [ttc_encoder_data_gen_default]
+Compiling architecture behavioral of entity xil_defaultlib.top [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_top
+Built simulation snapshot tb_top_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 888.336 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_top_behav -key {Behavioral:sim_1:Functional:tb_top} -tclbatch {tb_top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+source tb_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: simulation started
+Time: 100 ns  Iteration: 0  Process: /tb_top/line__148  File: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/tb/tb_top.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 916.738 ; gain = 28.402
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 1000 us
+Note: simulation started
+Time: 100 ns  Iteration: 0  Process: /tb_top/line__148  File: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/tb/tb_top.vhd
+run: Time (s): cpu = 00:00:18 ; elapsed = 00:00:38 . Memory (MB): peak = 927.629 ; gain = 5.059
+run 1000 us
+run: Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 928.254 ; gain = 0.625
+run all
+run: Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 928.254 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:18 . Memory (MB): peak = 937.520 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_top_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/ttc_encoder/ttc_data_generation.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ttc_data_generation
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto c5fa44d5fb1046d0b321c20e8140b53c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling architecture mmcme2_adv_v of entity unisim.MMCME2_ADV [\MMCME2_ADV(clkfbout_mult_f=25.0...]
+Compiling architecture mmcm_adv_v of entity unisim.MMCM_ADV [\MMCM_ADV(clkfbout_mult_f=25.0,c...]
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture xilinx of entity xil_defaultlib.pll_160MHz [pll_160mhz_default]
+Compiling architecture behavioral of entity xil_defaultlib.cdr2a_b_clk [cdr2a_b_clk_default]
+Compiling architecture arc of entity xil_defaultlib.serialb_com [\serialb_com(include_hamming=tru...]
+Compiling architecture core of entity xil_defaultlib.ttc_decoder_core [ttc_decoder_core_default]
+Compiling architecture top of entity xil_defaultlib.ttc_fmc_wrapper [ttc_fmc_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttc_data_generation [ttc_data_generation_default]
+Compiling architecture rtl of entity xil_defaultlib.d_ff [d_ff_default]
+Compiling architecture ibufds_v of entity unisim.IBUFDS [\IBUFDS(iostandard="default")(1,...]
+Compiling architecture mmcme2_adv_v of entity unisim.MMCME2_ADV [\MMCME2_ADV(bandwidth="optimized...]
+Compiling architecture structure of entity xil_defaultlib.mmcm [mmcm_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttcvi_encoder [\ttcvi_encoder(include_hamming=t...]
+Compiling architecture behavioral of entity xil_defaultlib.ttcvi_emulation [ttcvi_emulation_default]
+Compiling architecture rtl of entity xil_defaultlib.jk_ff [jk_ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttcvx_emulation [ttcvx_emulation_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttc_enc_wrapper [ttc_enc_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttc_encoder_data_gen [ttc_encoder_data_gen_default]
+Compiling architecture behavioral of entity xil_defaultlib.top [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_top
+Built simulation snapshot tb_top_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 937.535 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 937.535 ; gain = 0.000
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+Note: simulation started
+Time: 100 ns  Iteration: 0  Process: /tb_top/line__148  File: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/tb/tb_top.vhd
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 937.535 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:00:10 ; elapsed = 00:00:31 . Memory (MB): peak = 940.020 ; gain = 2.484
+run 1000 us
+run: Time (s): cpu = 00:00:09 ; elapsed = 00:00:34 . Memory (MB): peak = 954.633 ; gain = 14.613
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_top_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/ttc_encoder/ttc_data_generation.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ttc_data_generation
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto c5fa44d5fb1046d0b321c20e8140b53c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling architecture mmcme2_adv_v of entity unisim.MMCME2_ADV [\MMCME2_ADV(clkfbout_mult_f=25.0...]
+Compiling architecture mmcm_adv_v of entity unisim.MMCM_ADV [\MMCM_ADV(clkfbout_mult_f=25.0,c...]
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture xilinx of entity xil_defaultlib.pll_160MHz [pll_160mhz_default]
+Compiling architecture behavioral of entity xil_defaultlib.cdr2a_b_clk [cdr2a_b_clk_default]
+Compiling architecture arc of entity xil_defaultlib.serialb_com [\serialb_com(include_hamming=tru...]
+Compiling architecture core of entity xil_defaultlib.ttc_decoder_core [ttc_decoder_core_default]
+Compiling architecture top of entity xil_defaultlib.ttc_fmc_wrapper [ttc_fmc_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttc_data_generation [ttc_data_generation_default]
+Compiling architecture rtl of entity xil_defaultlib.d_ff [d_ff_default]
+Compiling architecture ibufds_v of entity unisim.IBUFDS [\IBUFDS(iostandard="default")(1,...]
+Compiling architecture mmcme2_adv_v of entity unisim.MMCME2_ADV [\MMCME2_ADV(bandwidth="optimized...]
+Compiling architecture structure of entity xil_defaultlib.mmcm [mmcm_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttcvi_encoder [\ttcvi_encoder(include_hamming=t...]
+Compiling architecture behavioral of entity xil_defaultlib.ttcvi_emulation [ttcvi_emulation_default]
+Compiling architecture rtl of entity xil_defaultlib.jk_ff [jk_ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttcvx_emulation [ttcvx_emulation_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttc_enc_wrapper [ttc_enc_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttc_encoder_data_gen [ttc_encoder_data_gen_default]
+Compiling architecture behavioral of entity xil_defaultlib.top [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_top
+Built simulation snapshot tb_top_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+Note: simulation started
+Time: 100 ns  Iteration: 0  Process: /tb_top/line__148  File: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/tb/tb_top.vhd
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 954.633 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 954.633 ; gain = 0.000
+run 1000 us
+run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 954.633 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_top_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/ttc_encoder/ttc_data_generation.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ttc_data_generation
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto c5fa44d5fb1046d0b321c20e8140b53c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling architecture mmcme2_adv_v of entity unisim.MMCME2_ADV [\MMCME2_ADV(clkfbout_mult_f=25.0...]
+Compiling architecture mmcm_adv_v of entity unisim.MMCM_ADV [\MMCM_ADV(clkfbout_mult_f=25.0,c...]
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture xilinx of entity xil_defaultlib.pll_160MHz [pll_160mhz_default]
+Compiling architecture behavioral of entity xil_defaultlib.cdr2a_b_clk [cdr2a_b_clk_default]
+Compiling architecture arc of entity xil_defaultlib.serialb_com [\serialb_com(include_hamming=tru...]
+Compiling architecture core of entity xil_defaultlib.ttc_decoder_core [ttc_decoder_core_default]
+Compiling architecture top of entity xil_defaultlib.ttc_fmc_wrapper [ttc_fmc_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttc_data_generation [ttc_data_generation_default]
+Compiling architecture rtl of entity xil_defaultlib.d_ff [d_ff_default]
+Compiling architecture ibufds_v of entity unisim.IBUFDS [\IBUFDS(iostandard="default")(1,...]
+Compiling architecture mmcme2_adv_v of entity unisim.MMCME2_ADV [\MMCME2_ADV(bandwidth="optimized...]
+Compiling architecture structure of entity xil_defaultlib.mmcm [mmcm_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttcvi_encoder [\ttcvi_encoder(include_hamming=t...]
+Compiling architecture behavioral of entity xil_defaultlib.ttcvi_emulation [ttcvi_emulation_default]
+Compiling architecture rtl of entity xil_defaultlib.jk_ff [jk_ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttcvx_emulation [ttcvx_emulation_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttc_enc_wrapper [ttc_enc_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttc_encoder_data_gen [ttc_encoder_data_gen_default]
+Compiling architecture behavioral of entity xil_defaultlib.top [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_top
+Built simulation snapshot tb_top_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+Note: simulation started
+Time: 100 ns  Iteration: 0  Process: /tb_top/line__148  File: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/tb/tb_top.vhd
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 954.633 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 954.633 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_top_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/ttc_encoder/ttc_data_generation.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ttc_data_generation
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto c5fa44d5fb1046d0b321c20e8140b53c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling architecture mmcme2_adv_v of entity unisim.MMCME2_ADV [\MMCME2_ADV(clkfbout_mult_f=25.0...]
+Compiling architecture mmcm_adv_v of entity unisim.MMCM_ADV [\MMCM_ADV(clkfbout_mult_f=25.0,c...]
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture xilinx of entity xil_defaultlib.pll_160MHz [pll_160mhz_default]
+Compiling architecture behavioral of entity xil_defaultlib.cdr2a_b_clk [cdr2a_b_clk_default]
+Compiling architecture arc of entity xil_defaultlib.serialb_com [\serialb_com(include_hamming=tru...]
+Compiling architecture core of entity xil_defaultlib.ttc_decoder_core [ttc_decoder_core_default]
+Compiling architecture top of entity xil_defaultlib.ttc_fmc_wrapper [ttc_fmc_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttc_data_generation [ttc_data_generation_default]
+Compiling architecture rtl of entity xil_defaultlib.d_ff [d_ff_default]
+Compiling architecture ibufds_v of entity unisim.IBUFDS [\IBUFDS(iostandard="default")(1,...]
+Compiling architecture mmcme2_adv_v of entity unisim.MMCME2_ADV [\MMCME2_ADV(bandwidth="optimized...]
+Compiling architecture structure of entity xil_defaultlib.mmcm [mmcm_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttcvi_encoder [\ttcvi_encoder(include_hamming=t...]
+Compiling architecture behavioral of entity xil_defaultlib.ttcvi_emulation [ttcvi_emulation_default]
+Compiling architecture rtl of entity xil_defaultlib.jk_ff [jk_ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttcvx_emulation [ttcvx_emulation_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttc_enc_wrapper [ttc_enc_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttc_encoder_data_gen [ttc_encoder_data_gen_default]
+Compiling architecture behavioral of entity xil_defaultlib.top [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_top
+Built simulation snapshot tb_top_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+Note: simulation started
+Time: 100 ns  Iteration: 0  Process: /tb_top/line__148  File: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/tb/tb_top.vhd
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 954.633 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:00:06 ; elapsed = 00:00:36 . Memory (MB): peak = 954.633 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_top_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/ttc_encoder/ttc_data_generation.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ttc_data_generation
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto c5fa44d5fb1046d0b321c20e8140b53c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling architecture mmcme2_adv_v of entity unisim.MMCME2_ADV [\MMCME2_ADV(clkfbout_mult_f=25.0...]
+Compiling architecture mmcm_adv_v of entity unisim.MMCM_ADV [\MMCM_ADV(clkfbout_mult_f=25.0,c...]
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture xilinx of entity xil_defaultlib.pll_160MHz [pll_160mhz_default]
+Compiling architecture behavioral of entity xil_defaultlib.cdr2a_b_clk [cdr2a_b_clk_default]
+Compiling architecture arc of entity xil_defaultlib.serialb_com [\serialb_com(include_hamming=tru...]
+Compiling architecture core of entity xil_defaultlib.ttc_decoder_core [ttc_decoder_core_default]
+Compiling architecture top of entity xil_defaultlib.ttc_fmc_wrapper [ttc_fmc_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttc_data_generation [ttc_data_generation_default]
+Compiling architecture rtl of entity xil_defaultlib.d_ff [d_ff_default]
+Compiling architecture ibufds_v of entity unisim.IBUFDS [\IBUFDS(iostandard="default")(1,...]
+Compiling architecture mmcme2_adv_v of entity unisim.MMCME2_ADV [\MMCME2_ADV(bandwidth="optimized...]
+Compiling architecture structure of entity xil_defaultlib.mmcm [mmcm_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttcvi_encoder [\ttcvi_encoder(include_hamming=t...]
+Compiling architecture behavioral of entity xil_defaultlib.ttcvi_emulation [ttcvi_emulation_default]
+Compiling architecture rtl of entity xil_defaultlib.jk_ff [jk_ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttcvx_emulation [ttcvx_emulation_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttc_enc_wrapper [ttc_enc_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttc_encoder_data_gen [ttc_encoder_data_gen_default]
+Compiling architecture behavioral of entity xil_defaultlib.top [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_top
+Built simulation snapshot tb_top_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+Note: simulation started
+Time: 100 ns  Iteration: 0  Process: /tb_top/line__148  File: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/tb/tb_top.vhd
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 954.633 ; gain = 0.000
+run 1000 us
+run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:34 . Memory (MB): peak = 954.633 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_top_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto c5fa44d5fb1046d0b321c20e8140b53c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+Note: simulation started
+Time: 100 ns  Iteration: 0  Process: /tb_top/line__148  File: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/tb/tb_top.vhd
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 954.633 ; gain = 0.000
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/ins_ttcvi/a_ch_out}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/ins_ttcvi/b_ch_out}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/ins_ttcvi/strobe_out}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/ins_ttcvi/ready_rd_a_ch_out}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/ins_ttcvi/ready_rd_b_ch_out}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/ins_ttcvi/clk_in}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/ins_ttcvi/reset_in}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/ins_ttcvi/a_ch_data_in}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/ins_ttcvi/valid_a_ch_data_in}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/ins_ttcvi/brc_data_in}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/ins_ttcvi/valid_brc_data_in}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/ins_ttcvi/addr_data_in}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/ins_ttcvi/valid_addr_data_in}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/ins_ttcvi/b_ch_brc_valid_s}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/ins_ttcvi/b_ch_addr_valid_s}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/ins_ttcvi/ready_rd_b_ch_s}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/ins_ttcvi/a_ch_strobe_s}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/ins_ttcvi/b_ch_strobe_s}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/ins_ttcvi/b_ch_brc_s}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/ins_ttcvi/b_ch_addr_s}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/ins_ttcvi/addr_a14_s}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/ins_ttcvi/addr_e_s}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/ins_ttcvi/addr_s8_s}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/ins_ttcvi/addr_d8_s}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/ins_ttcvi/brc_t2_s}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/ins_ttcvi/brc_d4_s}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/ins_ttcvi/brc_e_s}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/ins_ttcvi/brc_b_s}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/ins_ttcvi/counter_b_ch}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/ins_ttcvi/state}} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 1000 us
+Note: simulation started
+Time: 100 ns  Iteration: 0  Process: /tb_top/line__148  File: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/tb/tb_top.vhd
+run: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 958.254 ; gain = 1.816
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_top_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/ttc_encoder/ttcvi_emulation.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ttcvi_emulation
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto c5fa44d5fb1046d0b321c20e8140b53c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling architecture mmcme2_adv_v of entity unisim.MMCME2_ADV [\MMCME2_ADV(clkfbout_mult_f=25.0...]
+Compiling architecture mmcm_adv_v of entity unisim.MMCM_ADV [\MMCM_ADV(clkfbout_mult_f=25.0,c...]
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture xilinx of entity xil_defaultlib.pll_160MHz [pll_160mhz_default]
+Compiling architecture behavioral of entity xil_defaultlib.cdr2a_b_clk [cdr2a_b_clk_default]
+Compiling architecture arc of entity xil_defaultlib.serialb_com [\serialb_com(include_hamming=tru...]
+Compiling architecture core of entity xil_defaultlib.ttc_decoder_core [ttc_decoder_core_default]
+Compiling architecture top of entity xil_defaultlib.ttc_fmc_wrapper [ttc_fmc_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttc_data_generation [ttc_data_generation_default]
+Compiling architecture rtl of entity xil_defaultlib.d_ff [d_ff_default]
+Compiling architecture ibufds_v of entity unisim.IBUFDS [\IBUFDS(iostandard="default")(1,...]
+Compiling architecture mmcme2_adv_v of entity unisim.MMCME2_ADV [\MMCME2_ADV(bandwidth="optimized...]
+Compiling architecture structure of entity xil_defaultlib.mmcm [mmcm_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttcvi_encoder [\ttcvi_encoder(include_hamming=t...]
+Compiling architecture behavioral of entity xil_defaultlib.ttcvi_emulation [ttcvi_emulation_default]
+Compiling architecture rtl of entity xil_defaultlib.jk_ff [jk_ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttcvx_emulation [ttcvx_emulation_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttc_enc_wrapper [ttc_enc_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttc_encoder_data_gen [ttc_encoder_data_gen_default]
+Compiling architecture behavioral of entity xil_defaultlib.top [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_top
+Built simulation snapshot tb_top_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 964.145 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 964.145 ; gain = 0.000
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+Note: simulation started
+Time: 100 ns  Iteration: 0  Process: /tb_top/line__148  File: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/tb/tb_top.vhd
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 964.145 ; gain = 0.000
+run 1000 us
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sat Oct  6 19:46:00 2018] Launched synth_1...
+Run output will be captured here: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.runs/synth_1/runme.log
+[Sat Oct  6 19:46:00 2018] Launched impl_1...
+Run output will be captured here: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.runs/impl_1/runme.log
+current_wave_config {Untitled 1*}
+WARNING: [Wavedata 42-16] Error Unable to get wave configuration 'Untitled 1*'.
+Untitled 1
+add_wave {{/tb_top/clk_ttc_from_rx}} {{/tb_top/brc_strobe_from_rx}} {{/tb_top/addr_strobe_from_rx}} {{/tb_top/l1a_from_rx}} {{/tb_top/addr_a14_from_rx}} {{/tb_top/addr_e_from_rx}} {{/tb_top/addr_s8_from_rx}} {{/tb_top/addr_d8_from_rx}} {{/tb_top/brc_t2_from_rx}} {{/tb_top/brc_d4_from_rx}} {{/tb_top/brc_e_from_rx}} {{/tb_top/brc_b_from_rx}} {{/tb_top/b_ch_brc_from_rx}} {{/tb_top/b_ch_addr_from_rx}} {{/tb_top/ready_from_rx}} {{/tb_top/ready_from_ttc_enc}} {{/tb_top/ttc_clk_encoder}} {{/tb_top/clk_in_160}} {{/tb_top/clk_in_200_p}} {{/tb_top/clk_in_200_n}} {{/tb_top/reset}} {{/tb_top/stopSimulation}} {{/tb_top/startSimulation}} {{/tb_top/clk_ttc_period}} {{/tb_top/period_80}} {{/tb_top/clk_cdr_period}} {{/tb_top/period_200}} 
+run 1000 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 1000 us
+Note: simulation started
+Time: 100 ns  Iteration: 0  Process: /tb_top/line__148  File: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/tb/tb_top.vhd
+run: Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 968.238 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_top_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/ttc_encoder/ttc_data_generation.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ttc_data_generation
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto c5fa44d5fb1046d0b321c20e8140b53c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling architecture mmcme2_adv_v of entity unisim.MMCME2_ADV [\MMCME2_ADV(clkfbout_mult_f=25.0...]
+Compiling architecture mmcm_adv_v of entity unisim.MMCM_ADV [\MMCM_ADV(clkfbout_mult_f=25.0,c...]
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture xilinx of entity xil_defaultlib.pll_160MHz [pll_160mhz_default]
+Compiling architecture behavioral of entity xil_defaultlib.cdr2a_b_clk [cdr2a_b_clk_default]
+Compiling architecture arc of entity xil_defaultlib.serialb_com [\serialb_com(include_hamming=tru...]
+Compiling architecture core of entity xil_defaultlib.ttc_decoder_core [ttc_decoder_core_default]
+Compiling architecture top of entity xil_defaultlib.ttc_fmc_wrapper [ttc_fmc_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttc_data_generation [ttc_data_generation_default]
+Compiling architecture rtl of entity xil_defaultlib.d_ff [d_ff_default]
+Compiling architecture ibufds_v of entity unisim.IBUFDS [\IBUFDS(iostandard="default")(1,...]
+Compiling architecture mmcme2_adv_v of entity unisim.MMCME2_ADV [\MMCME2_ADV(bandwidth="optimized...]
+Compiling architecture structure of entity xil_defaultlib.mmcm [mmcm_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttcvi_encoder [\ttcvi_encoder(include_hamming=t...]
+Compiling architecture behavioral of entity xil_defaultlib.ttcvi_emulation [ttcvi_emulation_default]
+Compiling architecture rtl of entity xil_defaultlib.jk_ff [jk_ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttcvx_emulation [ttcvx_emulation_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttc_enc_wrapper [ttc_enc_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttc_encoder_data_gen [ttc_encoder_data_gen_default]
+Compiling architecture behavioral of entity xil_defaultlib.top [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_top
+Built simulation snapshot tb_top_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 968.789 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 968.789 ; gain = 0.000
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+Note: simulation started
+Time: 100 ns  Iteration: 0  Process: /tb_top/line__148  File: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/tb/tb_top.vhd
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 968.789 ; gain = 0.000
+run 1000 us
+run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 971.238 ; gain = 2.449
+run 1000 us
+run: Time (s): cpu = 00:00:10 ; elapsed = 00:00:38 . Memory (MB): peak = 971.238 ; gain = 0.000
+run 1000 us
+run: Time (s): cpu = 00:00:11 ; elapsed = 00:00:35 . Memory (MB): peak = 971.238 ; gain = 0.000
+run 1000 us
+run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 971.238 ; gain = 0.000
+launch_simulation -mode post-implementation -type timing
+INFO: [Vivado 12-5682] Launching post-implementation timing simulation in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-20] The target language is set to VHDL, it is not supported for simulation type 'timing', using Verilog instead.
+INFO: [Netlist 29-17] Analyzing 32 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Device 21-403] Loading part xc7k325tffg900-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.055 . Memory (MB): peak = 1911.258 ; gain = 0.000
+open_run: Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1911.258 ; gain = 940.020
+INFO: [Common 17-344] 'open_run' was cancelled
+INFO: [Vivado 12-5357] 'setup' step aborted
+launch_simulation: Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1911.258 ; gain = 940.020
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+launch_simulation -mode post-implementation -type timing
+INFO: [Vivado 12-5682] Launching post-implementation timing simulation in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-20] The target language is set to VHDL, it is not supported for simulation type 'timing', using Verilog instead.
+INFO: [Netlist 29-17] Analyzing 32 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.116 . Memory (MB): peak = 1924.391 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.118 . Memory (MB): peak = 1924.391 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 2003.516 ; gain = 92.258
+INFO: [SIM-utils-31] Writing simulation netlist file for design 'impl_1'...
+INFO: [SIM-utils-32] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim/tb_top_time_impl.v"
+INFO: [SIM-utils-34] Writing SDF file...
+INFO: [SIM-utils-35] write_sdf -mode timesim -process_corner slow -force -file "C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim/tb_top_time_impl.sdf"
+INFO: [SIM-utils-36] Netlist generated:C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim/tb_top_time_impl.v
+INFO: [SIM-utils-37] SDF generated:C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim/tb_top_time_impl.sdf
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim'
+"xvlog --incr --relax -prj tb_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim/tb_top_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cdr2a_b_clk
+INFO: [VRFC 10-311] analyzing module d_ff
+INFO: [VRFC 10-311] analyzing module d_ff_0
+INFO: [VRFC 10-311] analyzing module d_ff_1
+INFO: [VRFC 10-311] analyzing module jk_ff
+INFO: [VRFC 10-311] analyzing module mmcm
+INFO: [VRFC 10-311] analyzing module pll_160MHz
+INFO: [VRFC 10-311] analyzing module serialb_com
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-311] analyzing module ttc_data_generation
+INFO: [VRFC 10-311] analyzing module ttc_decoder_core
+INFO: [VRFC 10-311] analyzing module ttc_enc_wrapper
+INFO: [VRFC 10-311] analyzing module ttc_encoder_data_gen
+INFO: [VRFC 10-311] analyzing module ttc_fmc_wrapper
+INFO: [VRFC 10-311] analyzing module ttcvi_emulation
+INFO: [VRFC 10-311] analyzing module ttcvi_encoder
+INFO: [VRFC 10-311] analyzing module ttcvx_emulation
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj tb_top_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto c5fa44d5fb1046d0b321c20e8140b53c --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot tb_top_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "tb_top_time_impl.sdf", for root module "tb_top/ins_top".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "tb_top_time_impl.sdf", for root module "tb_top/ins_top".
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.FDCE_default
+Compiling module xil_defaultlib.d_ff
+Compiling module xil_defaultlib.d_ff_0
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.IBUFDS(IOSTANDARD="default")
+Compiling module simprims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=4.0,C...
+Compiling module xil_defaultlib.mmcm
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.LUT5
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.FDRE_default
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.MUXF7
+Compiling module xil_defaultlib.ttcvi_encoder
+Compiling module xil_defaultlib.ttcvi_emulation
+Compiling module xil_defaultlib.d_ff_1
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module xil_defaultlib.jk_ff
+Compiling module xil_defaultlib.ttcvx_emulation
+Compiling module simprims_ver.CARRY4
+Compiling module simprims_ver.FDPE_default
+Compiling module xil_defaultlib.ttc_enc_wrapper
+Compiling module xil_defaultlib.ttc_data_generation
+Compiling module xil_defaultlib.ttc_encoder_data_gen
+Compiling module simprims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=25.0,...
+Compiling module xil_defaultlib.pll_160MHz
+Compiling module simprims_ver.FDSE_default
+Compiling module xil_defaultlib.cdr2a_b_clk
+Compiling module xil_defaultlib.serialb_com
+Compiling module xil_defaultlib.ttc_decoder_core
+Compiling module xil_defaultlib.ttc_fmc_wrapper
+Compiling module xil_defaultlib.top
+Compiling architecture behavioral of entity xil_defaultlib.tb_top
+Built simulation snapshot tb_top_time_impl
+run_program: Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 2057.094 ; gain = 25.074
+INFO: [USF-XSim-69] 'elaborate' step finished in '15' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_top_time_impl -key {Post-Implementation:sim_1:Timing:tb_top} -tclbatch {tb_top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+source tb_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: simulation started
+Time: 100 ns  Iteration: 0  Process: /tb_top/line__148  File: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/tb/tb_top.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_top_time_impl' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:34 ; elapsed = 00:00:29 . Memory (MB): peak = 2057.094 ; gain = 145.836
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 1000 us
+Note: simulation started
+Time: 100 ns  Iteration: 0  Process: /tb_top/line__148  File: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/tb/tb_top.vhd
+run: Time (s): cpu = 00:00:11 ; elapsed = 00:00:23 . Memory (MB): peak = 2057.094 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sat Oct  6 20:00:56 2018] Launched synth_1...
+Run output will be captured here: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.runs/synth_1/runme.log
+[Sat Oct  6 20:00:56 2018] Launched impl_1...
+Run output will be captured here: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.runs/impl_1/runme.log
+current_sim simulation_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_top_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/ttc_encoder/ttc_data_generation.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ttc_data_generation
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto c5fa44d5fb1046d0b321c20e8140b53c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling architecture mmcme2_adv_v of entity unisim.MMCME2_ADV [\MMCME2_ADV(clkfbout_mult_f=25.0...]
+Compiling architecture mmcm_adv_v of entity unisim.MMCM_ADV [\MMCM_ADV(clkfbout_mult_f=25.0,c...]
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture xilinx of entity xil_defaultlib.pll_160MHz [pll_160mhz_default]
+Compiling architecture behavioral of entity xil_defaultlib.cdr2a_b_clk [cdr2a_b_clk_default]
+Compiling architecture arc of entity xil_defaultlib.serialb_com [\serialb_com(include_hamming=tru...]
+Compiling architecture core of entity xil_defaultlib.ttc_decoder_core [ttc_decoder_core_default]
+Compiling architecture top of entity xil_defaultlib.ttc_fmc_wrapper [ttc_fmc_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttc_data_generation [ttc_data_generation_default]
+Compiling architecture rtl of entity xil_defaultlib.d_ff [d_ff_default]
+Compiling architecture ibufds_v of entity unisim.IBUFDS [\IBUFDS(iostandard="default")(1,...]
+Compiling architecture mmcme2_adv_v of entity unisim.MMCME2_ADV [\MMCME2_ADV(bandwidth="optimized...]
+Compiling architecture structure of entity xil_defaultlib.mmcm [mmcm_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttcvi_encoder [\ttcvi_encoder(include_hamming=t...]
+Compiling architecture behavioral of entity xil_defaultlib.ttcvi_emulation [ttcvi_emulation_default]
+Compiling architecture rtl of entity xil_defaultlib.jk_ff [jk_ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttcvx_emulation [ttcvx_emulation_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttc_enc_wrapper [ttc_enc_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttc_encoder_data_gen [ttc_encoder_data_gen_default]
+Compiling architecture behavioral of entity xil_defaultlib.top [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_top
+Built simulation snapshot tb_top_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 2057.094 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_top_behav -key {Behavioral:sim_1:Functional:tb_top} -tclbatch {tb_top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+source tb_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: simulation started
+Time: 100 ns  Iteration: 0  Process: /tb_top/line__148  File: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/tb/tb_top.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 2057.094 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 1000 us
+Note: simulation started
+Time: 100 ns  Iteration: 0  Process: /tb_top/line__148  File: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/tb/tb_top.vhd
+run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 2057.094 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_top_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto c5fa44d5fb1046d0b321c20e8140b53c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+Note: simulation started
+Time: 100 ns  Iteration: 0  Process: /tb_top/line__148  File: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/tb/tb_top.vhd
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2057.094 ; gain = 0.000
+run 1000 us
+run: Time (s): cpu = 00:00:08 ; elapsed = 00:00:35 . Memory (MB): peak = 2057.094 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.runs/synth_1
+
+launch_runs impl_1 -jobs 8
+[Sat Oct  6 20:09:09 2018] Launched synth_1...
+Run output will be captured here: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.runs/synth_1/runme.log
+[Sat Oct  6 20:09:09 2018] Launched impl_1...
+Run output will be captured here: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.runs/impl_1/runme.log
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_top_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/ttc_encoder/ttc_data_generation.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ttc_data_generation
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto c5fa44d5fb1046d0b321c20e8140b53c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling architecture mmcme2_adv_v of entity unisim.MMCME2_ADV [\MMCME2_ADV(clkfbout_mult_f=25.0...]
+Compiling architecture mmcm_adv_v of entity unisim.MMCM_ADV [\MMCM_ADV(clkfbout_mult_f=25.0,c...]
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture xilinx of entity xil_defaultlib.pll_160MHz [pll_160mhz_default]
+Compiling architecture behavioral of entity xil_defaultlib.cdr2a_b_clk [cdr2a_b_clk_default]
+Compiling architecture arc of entity xil_defaultlib.serialb_com [\serialb_com(include_hamming=tru...]
+Compiling architecture core of entity xil_defaultlib.ttc_decoder_core [ttc_decoder_core_default]
+Compiling architecture top of entity xil_defaultlib.ttc_fmc_wrapper [ttc_fmc_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttc_data_generation [ttc_data_generation_default]
+Compiling architecture rtl of entity xil_defaultlib.d_ff [d_ff_default]
+Compiling architecture ibufds_v of entity unisim.IBUFDS [\IBUFDS(iostandard="default")(1,...]
+Compiling architecture mmcme2_adv_v of entity unisim.MMCME2_ADV [\MMCME2_ADV(bandwidth="optimized...]
+Compiling architecture structure of entity xil_defaultlib.mmcm [mmcm_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttcvi_encoder [\ttcvi_encoder(include_hamming=t...]
+Compiling architecture behavioral of entity xil_defaultlib.ttcvi_emulation [ttcvi_emulation_default]
+Compiling architecture rtl of entity xil_defaultlib.jk_ff [jk_ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttcvx_emulation [ttcvx_emulation_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttc_enc_wrapper [ttc_enc_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttc_encoder_data_gen [ttc_encoder_data_gen_default]
+Compiling architecture behavioral of entity xil_defaultlib.top [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_top
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'elaborate' step aborted
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+INFO: [Common 17-344] 'relaunch_sim' was cancelled
+current_sim simulation_2
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_top_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto c5fa44d5fb1046d0b321c20e8140b53c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling architecture mmcme2_adv_v of entity unisim.MMCME2_ADV [\MMCME2_ADV(clkfbout_mult_f=25.0...]
+Compiling architecture mmcm_adv_v of entity unisim.MMCM_ADV [\MMCM_ADV(clkfbout_mult_f=25.0,c...]
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture xilinx of entity xil_defaultlib.pll_160MHz [pll_160mhz_default]
+Compiling architecture behavioral of entity xil_defaultlib.cdr2a_b_clk [cdr2a_b_clk_default]
+Compiling architecture arc of entity xil_defaultlib.serialb_com [\serialb_com(include_hamming=tru...]
+Compiling architecture core of entity xil_defaultlib.ttc_decoder_core [ttc_decoder_core_default]
+Compiling architecture top of entity xil_defaultlib.ttc_fmc_wrapper [ttc_fmc_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttc_data_generation [ttc_data_generation_default]
+Compiling architecture rtl of entity xil_defaultlib.d_ff [d_ff_default]
+Compiling architecture ibufds_v of entity unisim.IBUFDS [\IBUFDS(iostandard="default")(1,...]
+Compiling architecture mmcme2_adv_v of entity unisim.MMCME2_ADV [\MMCME2_ADV(bandwidth="optimized...]
+Compiling architecture structure of entity xil_defaultlib.mmcm [mmcm_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttcvi_encoder [\ttcvi_encoder(include_hamming=t...]
+Compiling architecture behavioral of entity xil_defaultlib.ttcvi_emulation [ttcvi_emulation_default]
+Compiling architecture rtl of entity xil_defaultlib.jk_ff [jk_ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttcvx_emulation [ttcvx_emulation_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttc_enc_wrapper [ttc_enc_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttc_encoder_data_gen [ttc_encoder_data_gen_default]
+Compiling architecture behavioral of entity xil_defaultlib.top [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_top
+Built simulation snapshot tb_top_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 2057.094 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 2057.094 ; gain = 0.000
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+Note: simulation started
+Time: 100 ns  Iteration: 0  Process: /tb_top/line__148  File: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/tb/tb_top.vhd
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 2057.094 ; gain = 0.000
+run 1000 us
+run: Time (s): cpu = 00:00:07 ; elapsed = 00:00:36 . Memory (MB): peak = 2057.094 ; gain = 0.000
+close_design
+launch_simulation -mode post-implementation -type timing
+INFO: [Vivado 12-5682] Launching post-implementation timing simulation in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-20] The target language is set to VHDL, it is not supported for simulation type 'timing', using Verilog instead.
+INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.127 . Memory (MB): peak = 2057.094 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.127 . Memory (MB): peak = 2057.094 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [SIM-utils-31] Writing simulation netlist file for design 'impl_1'...
+INFO: [SIM-utils-32] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim/tb_top_time_impl.v"
+INFO: [SIM-utils-34] Writing SDF file...
+INFO: [SIM-utils-35] write_sdf -mode timesim -process_corner slow -force -file "C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim/tb_top_time_impl.sdf"
+INFO: [SIM-utils-36] Netlist generated:C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim/tb_top_time_impl.v
+INFO: [SIM-utils-37] SDF generated:C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim/tb_top_time_impl.sdf
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim'
+"xvlog --incr --relax -prj tb_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim/tb_top_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cdr2a_b_clk
+INFO: [VRFC 10-311] analyzing module d_ff
+INFO: [VRFC 10-311] analyzing module d_ff_0
+INFO: [VRFC 10-311] analyzing module d_ff_1
+INFO: [VRFC 10-311] analyzing module jk_ff
+INFO: [VRFC 10-311] analyzing module mmcm
+INFO: [VRFC 10-311] analyzing module pll_160MHz
+INFO: [VRFC 10-311] analyzing module serialb_com
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-311] analyzing module ttc_data_generation
+INFO: [VRFC 10-311] analyzing module ttc_decoder_core
+INFO: [VRFC 10-311] analyzing module ttc_enc_wrapper
+INFO: [VRFC 10-311] analyzing module ttc_encoder_data_gen
+INFO: [VRFC 10-311] analyzing module ttc_fmc_wrapper
+INFO: [VRFC 10-311] analyzing module ttcvi_emulation
+INFO: [VRFC 10-311] analyzing module ttcvi_encoder
+INFO: [VRFC 10-311] analyzing module ttcvx_emulation
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj tb_top_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto c5fa44d5fb1046d0b321c20e8140b53c --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot tb_top_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "tb_top_time_impl.sdf", for root module "tb_top/ins_top".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "tb_top_time_impl.sdf", for root module "tb_top/ins_top".
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.FDCE_default
+Compiling module xil_defaultlib.d_ff
+Compiling module xil_defaultlib.d_ff_0
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.IBUFDS(IOSTANDARD="default")
+Compiling module simprims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=4.0,C...
+Compiling module xil_defaultlib.mmcm
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.LUT5
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.FDRE_default
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.MUXF7
+Compiling module xil_defaultlib.ttcvi_encoder
+Compiling module xil_defaultlib.ttcvi_emulation
+Compiling module xil_defaultlib.d_ff_1
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module xil_defaultlib.jk_ff
+Compiling module xil_defaultlib.ttcvx_emulation
+Compiling module simprims_ver.CARRY4
+Compiling module simprims_ver.FDPE_default
+Compiling module xil_defaultlib.ttc_enc_wrapper
+Compiling module simprims_ver.GND
+Compiling module xil_defaultlib.ttc_data_generation
+Compiling module xil_defaultlib.ttc_encoder_data_gen
+Compiling module simprims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=25.0,...
+Compiling module xil_defaultlib.pll_160MHz
+Compiling module simprims_ver.FDSE_default
+Compiling module xil_defaultlib.cdr2a_b_clk
+Compiling module xil_defaultlib.serialb_com
+Compiling module xil_defaultlib.ttc_decoder_core
+Compiling module xil_defaultlib.ttc_fmc_wrapper
+Compiling module xil_defaultlib.top
+Compiling architecture behavioral of entity xil_defaultlib.tb_top
+Built simulation snapshot tb_top_time_impl
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 2057.094 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '11' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_top_time_impl -key {Post-Implementation:sim_1:Timing:tb_top} -tclbatch {tb_top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+source tb_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: simulation started
+Time: 100 ns  Iteration: 0  Process: /tb_top/line__148  File: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/tb/tb_top.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_top_time_impl' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:15 ; elapsed = 00:00:25 . Memory (MB): peak = 2057.094 ; gain = 0.000
+run 1000 us
+run: Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 2057.094 ; gain = 0.000
+run 1000 us
+run: Time (s): cpu = 00:01:06 ; elapsed = 00:02:42 . Memory (MB): peak = 2057.094 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.runs/synth_1
+
+launch_runs impl_1 -jobs 8
+[Sat Oct  6 20:18:01 2018] Launched synth_1...
+Run output will be captured here: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.runs/synth_1/runme.log
+[Sat Oct  6 20:18:01 2018] Launched impl_1...
+Run output will be captured here: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.runs/impl_1/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.107 . Memory (MB): peak = 2059.348 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.107 . Memory (MB): peak = 2059.348 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 2064.074 ; gain = 6.980
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation -mode post-implementation -type timing
+INFO: [Vivado 12-5682] Launching post-implementation timing simulation in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-20] The target language is set to VHDL, it is not supported for simulation type 'timing', using Verilog instead.
+INFO: [SIM-utils-31] Writing simulation netlist file for design 'impl_1'...
+INFO: [SIM-utils-32] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim/tb_top_time_impl.v"
+INFO: [SIM-utils-34] Writing SDF file...
+INFO: [SIM-utils-35] write_sdf -mode timesim -process_corner slow -force -file "C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim/tb_top_time_impl.sdf"
+INFO: [SIM-utils-36] Netlist generated:C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim/tb_top_time_impl.v
+INFO: [SIM-utils-37] SDF generated:C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim/tb_top_time_impl.sdf
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim'
+"xvlog --incr --relax -prj tb_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim/tb_top_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cdr2a_b_clk
+INFO: [VRFC 10-311] analyzing module d_ff
+INFO: [VRFC 10-311] analyzing module d_ff_0
+INFO: [VRFC 10-311] analyzing module d_ff_1
+INFO: [VRFC 10-311] analyzing module jk_ff
+INFO: [VRFC 10-311] analyzing module mmcm
+INFO: [VRFC 10-311] analyzing module pll_160MHz
+INFO: [VRFC 10-311] analyzing module serialb_com
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-311] analyzing module ttc_data_generation
+INFO: [VRFC 10-311] analyzing module ttc_decoder_core
+INFO: [VRFC 10-311] analyzing module ttc_enc_wrapper
+INFO: [VRFC 10-311] analyzing module ttc_encoder_data_gen
+INFO: [VRFC 10-311] analyzing module ttc_fmc_wrapper
+INFO: [VRFC 10-311] analyzing module ttcvi_emulation
+INFO: [VRFC 10-311] analyzing module ttcvi_encoder
+INFO: [VRFC 10-311] analyzing module ttcvx_emulation
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj tb_top_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto c5fa44d5fb1046d0b321c20e8140b53c --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot tb_top_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "tb_top_time_impl.sdf", for root module "tb_top/ins_top".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "tb_top_time_impl.sdf", for root module "tb_top/ins_top".
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.FDCE_default
+Compiling module xil_defaultlib.d_ff
+Compiling module xil_defaultlib.d_ff_0
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.IBUFDS(IOSTANDARD="default")
+Compiling module simprims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=4.0,C...
+Compiling module xil_defaultlib.mmcm
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.LUT5
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.FDRE_default
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.MUXF7
+Compiling module xil_defaultlib.ttcvi_encoder
+Compiling module xil_defaultlib.ttcvi_emulation
+Compiling module xil_defaultlib.d_ff_1
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module xil_defaultlib.jk_ff
+Compiling module xil_defaultlib.ttcvx_emulation
+Compiling module simprims_ver.CARRY4
+Compiling module simprims_ver.FDPE_default
+Compiling module xil_defaultlib.ttc_enc_wrapper
+Compiling module simprims_ver.GND
+Compiling module xil_defaultlib.ttc_data_generation
+Compiling module xil_defaultlib.ttc_encoder_data_gen
+Compiling module simprims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=25.0,...
+Compiling module xil_defaultlib.pll_160MHz
+Compiling module simprims_ver.FDSE_default
+Compiling module xil_defaultlib.cdr2a_b_clk
+Compiling module xil_defaultlib.serialb_com
+Compiling module xil_defaultlib.ttc_decoder_core
+Compiling module xil_defaultlib.ttc_fmc_wrapper
+Compiling module xil_defaultlib.top
+Compiling architecture behavioral of entity xil_defaultlib.tb_top
+Built simulation snapshot tb_top_time_impl
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 2072.355 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '11' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_top_time_impl -key {Post-Implementation:sim_1:Timing:tb_top} -tclbatch {tb_top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+source tb_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: simulation started
+Time: 100 ns  Iteration: 0  Process: /tb_top/line__148  File: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/tb/tb_top.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_top_time_impl' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:18 . Memory (MB): peak = 2075.813 ; gain = 6.707
+run 1000 us
+run: Time (s): cpu = 00:00:28 ; elapsed = 00:01:12 . Memory (MB): peak = 2077.289 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sat Oct  6 20:24:34 2018] Launched synth_1...
+Run output will be captured here: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.runs/synth_1/runme.log
+[Sat Oct  6 20:24:34 2018] Launched impl_1...
+Run output will be captured here: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.runs/impl_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_design
+launch_simulation -mode post-implementation -type timing
+INFO: [Vivado 12-5682] Launching post-implementation timing simulation in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-20] The target language is set to VHDL, it is not supported for simulation type 'timing', using Verilog instead.
+INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.105 . Memory (MB): peak = 2079.145 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.105 . Memory (MB): peak = 2079.145 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [SIM-utils-31] Writing simulation netlist file for design 'impl_1'...
+INFO: [SIM-utils-32] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim/tb_top_time_impl.v"
+INFO: [SIM-utils-34] Writing SDF file...
+INFO: [SIM-utils-35] write_sdf -mode timesim -process_corner slow -force -file "C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim/tb_top_time_impl.sdf"
+INFO: [SIM-utils-36] Netlist generated:C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim/tb_top_time_impl.v
+INFO: [SIM-utils-37] SDF generated:C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim/tb_top_time_impl.sdf
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim'
+"xvlog --incr --relax -prj tb_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim/tb_top_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cdr2a_b_clk
+INFO: [VRFC 10-311] analyzing module d_ff
+INFO: [VRFC 10-311] analyzing module d_ff_0
+INFO: [VRFC 10-311] analyzing module d_ff_1
+INFO: [VRFC 10-311] analyzing module jk_ff
+INFO: [VRFC 10-311] analyzing module mmcm
+INFO: [VRFC 10-311] analyzing module pll_160MHz
+INFO: [VRFC 10-311] analyzing module serialb_com
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-311] analyzing module ttc_data_generation
+INFO: [VRFC 10-311] analyzing module ttc_decoder_core
+INFO: [VRFC 10-311] analyzing module ttc_enc_wrapper
+INFO: [VRFC 10-311] analyzing module ttc_encoder_data_gen
+INFO: [VRFC 10-311] analyzing module ttc_fmc_wrapper
+INFO: [VRFC 10-311] analyzing module ttcvi_emulation
+INFO: [VRFC 10-311] analyzing module ttcvi_encoder
+INFO: [VRFC 10-311] analyzing module ttcvx_emulation
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj tb_top_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto c5fa44d5fb1046d0b321c20e8140b53c --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot tb_top_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "tb_top_time_impl.sdf", for root module "tb_top/ins_top".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "tb_top_time_impl.sdf", for root module "tb_top/ins_top".
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.FDCE_default
+Compiling module xil_defaultlib.d_ff
+Compiling module xil_defaultlib.d_ff_0
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.IBUFDS(IOSTANDARD="default")
+Compiling module simprims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=4.0,C...
+Compiling module xil_defaultlib.mmcm
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.LUT5
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.FDRE_default
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.MUXF7
+Compiling module xil_defaultlib.ttcvi_encoder
+Compiling module xil_defaultlib.ttcvi_emulation
+Compiling module xil_defaultlib.d_ff_1
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module xil_defaultlib.jk_ff
+Compiling module xil_defaultlib.ttcvx_emulation
+Compiling module simprims_ver.CARRY4
+Compiling module simprims_ver.FDPE_default
+Compiling module xil_defaultlib.ttc_enc_wrapper
+Compiling module simprims_ver.GND
+Compiling module xil_defaultlib.ttc_data_generation
+Compiling module xil_defaultlib.ttc_encoder_data_gen
+Compiling module simprims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=25.0,...
+Compiling module xil_defaultlib.pll_160MHz
+Compiling module simprims_ver.FDSE_default
+Compiling module xil_defaultlib.cdr2a_b_clk
+Compiling module xil_defaultlib.serialb_com
+Compiling module xil_defaultlib.ttc_decoder_core
+Compiling module xil_defaultlib.ttc_fmc_wrapper
+Compiling module xil_defaultlib.top
+Compiling architecture behavioral of entity xil_defaultlib.tb_top
+Built simulation snapshot tb_top_time_impl
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 2091.734 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '10' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_top_time_impl -key {Post-Implementation:sim_1:Timing:tb_top} -tclbatch {tb_top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+source tb_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: simulation started
+Time: 100 ns  Iteration: 0  Process: /tb_top/line__148  File: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/tb/tb_top.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_top_time_impl' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:21 . Memory (MB): peak = 2091.734 ; gain = 12.590
+run 1000 us
+run: Time (s): cpu = 00:00:38 ; elapsed = 00:02:02 . Memory (MB): peak = 2099.902 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.runs/synth_1
+
+launch_runs impl_1 -jobs 8
+[Sat Oct  6 20:32:21 2018] Launched synth_1...
+Run output will be captured here: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.runs/synth_1/runme.log
+[Sat Oct  6 20:32:21 2018] Launched impl_1...
+Run output will be captured here: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.runs/impl_1/runme.log
+current_sim simulation_3
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_top_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/ttc_encoder/ttc_data_generation.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ttc_data_generation
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto c5fa44d5fb1046d0b321c20e8140b53c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling architecture mmcme2_adv_v of entity unisim.MMCME2_ADV [\MMCME2_ADV(clkfbout_mult_f=25.0...]
+Compiling architecture mmcm_adv_v of entity unisim.MMCM_ADV [\MMCM_ADV(clkfbout_mult_f=25.0,c...]
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture xilinx of entity xil_defaultlib.pll_160MHz [pll_160mhz_default]
+Compiling architecture behavioral of entity xil_defaultlib.cdr2a_b_clk [cdr2a_b_clk_default]
+Compiling architecture arc of entity xil_defaultlib.serialb_com [\serialb_com(include_hamming=tru...]
+Compiling architecture core of entity xil_defaultlib.ttc_decoder_core [ttc_decoder_core_default]
+Compiling architecture top of entity xil_defaultlib.ttc_fmc_wrapper [ttc_fmc_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttc_data_generation [ttc_data_generation_default]
+Compiling architecture rtl of entity xil_defaultlib.d_ff [d_ff_default]
+Compiling architecture ibufds_v of entity unisim.IBUFDS [\IBUFDS(iostandard="default")(1,...]
+Compiling architecture mmcme2_adv_v of entity unisim.MMCME2_ADV [\MMCME2_ADV(bandwidth="optimized...]
+Compiling architecture structure of entity xil_defaultlib.mmcm [mmcm_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttcvi_encoder [\ttcvi_encoder(include_hamming=t...]
+Compiling architecture behavioral of entity xil_defaultlib.ttcvi_emulation [ttcvi_emulation_default]
+Compiling architecture rtl of entity xil_defaultlib.jk_ff [jk_ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttcvx_emulation [ttcvx_emulation_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttc_enc_wrapper [ttc_enc_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttc_encoder_data_gen [ttc_encoder_data_gen_default]
+Compiling architecture behavioral of entity xil_defaultlib.top [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_top
+Built simulation snapshot tb_top_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 2211.363 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 2211.363 ; gain = 0.000
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+Note: simulation started
+Time: 100 ns  Iteration: 0  Process: /tb_top/line__148  File: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/tb/tb_top.vhd
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 2211.383 ; gain = 0.020
+current_sim simulation_6
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_design
+launch_simulation -mode post-implementation -type timing
+INFO: [Vivado 12-5682] Launching post-implementation timing simulation in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-20] The target language is set to VHDL, it is not supported for simulation type 'timing', using Verilog instead.
+INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.101 . Memory (MB): peak = 2215.375 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.101 . Memory (MB): peak = 2215.375 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [SIM-utils-31] Writing simulation netlist file for design 'impl_1'...
+INFO: [SIM-utils-32] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim/tb_top_time_impl.v"
+INFO: [SIM-utils-34] Writing SDF file...
+INFO: [SIM-utils-35] write_sdf -mode timesim -process_corner slow -force -file "C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim/tb_top_time_impl.sdf"
+INFO: [SIM-utils-36] Netlist generated:C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim/tb_top_time_impl.v
+INFO: [SIM-utils-37] SDF generated:C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim/tb_top_time_impl.sdf
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim'
+"xvlog --incr --relax -prj tb_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim/tb_top_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cdr2a_b_clk
+INFO: [VRFC 10-311] analyzing module d_ff
+INFO: [VRFC 10-311] analyzing module d_ff_0
+INFO: [VRFC 10-311] analyzing module d_ff_1
+INFO: [VRFC 10-311] analyzing module jk_ff
+INFO: [VRFC 10-311] analyzing module mmcm
+INFO: [VRFC 10-311] analyzing module pll_160MHz
+INFO: [VRFC 10-311] analyzing module serialb_com
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-311] analyzing module ttc_data_generation
+INFO: [VRFC 10-311] analyzing module ttc_decoder_core
+INFO: [VRFC 10-311] analyzing module ttc_enc_wrapper
+INFO: [VRFC 10-311] analyzing module ttc_encoder_data_gen
+INFO: [VRFC 10-311] analyzing module ttc_fmc_wrapper
+INFO: [VRFC 10-311] analyzing module ttcvi_emulation
+INFO: [VRFC 10-311] analyzing module ttcvi_encoder
+INFO: [VRFC 10-311] analyzing module ttcvx_emulation
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj tb_top_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto c5fa44d5fb1046d0b321c20e8140b53c --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot tb_top_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "tb_top_time_impl.sdf", for root module "tb_top/ins_top".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "tb_top_time_impl.sdf", for root module "tb_top/ins_top".
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.FDCE_default
+Compiling module xil_defaultlib.d_ff
+Compiling module xil_defaultlib.d_ff_0
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.IBUFDS(IOSTANDARD="default")
+Compiling module simprims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=4.0,C...
+Compiling module xil_defaultlib.mmcm
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.LUT5
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.FDRE_default
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.MUXF7
+Compiling module xil_defaultlib.ttcvi_encoder
+Compiling module xil_defaultlib.ttcvi_emulation
+Compiling module xil_defaultlib.d_ff_1
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module xil_defaultlib.jk_ff
+Compiling module xil_defaultlib.ttcvx_emulation
+Compiling module simprims_ver.CARRY4
+Compiling module simprims_ver.FDPE_default
+Compiling module xil_defaultlib.ttc_enc_wrapper
+Compiling module simprims_ver.GND
+Compiling module xil_defaultlib.ttc_data_generation
+Compiling module xil_defaultlib.ttc_encoder_data_gen
+Compiling module simprims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=25.0,...
+Compiling module xil_defaultlib.pll_160MHz
+Compiling module simprims_ver.FDSE_default
+Compiling module xil_defaultlib.cdr2a_b_clk
+Compiling module xil_defaultlib.serialb_com
+Compiling module xil_defaultlib.ttc_decoder_core
+Compiling module xil_defaultlib.ttc_fmc_wrapper
+Compiling module xil_defaultlib.top
+Compiling architecture behavioral of entity xil_defaultlib.tb_top
+Built simulation snapshot tb_top_time_impl
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 2224.965 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '11' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_top_time_impl -key {Post-Implementation:sim_1:Timing:tb_top} -tclbatch {tb_top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+source tb_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: simulation started
+Time: 100 ns  Iteration: 0  Process: /tb_top/line__148  File: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/tb/tb_top.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_top_time_impl' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:21 . Memory (MB): peak = 2224.965 ; gain = 9.590
+run 1000 us
+run: Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 2224.965 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.runs/synth_1
+
+launch_runs impl_1 -jobs 8
+[Sat Oct  6 20:40:37 2018] Launched synth_1...
+Run output will be captured here: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.runs/synth_1/runme.log
+[Sat Oct  6 20:40:37 2018] Launched impl_1...
+Run output will be captured here: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.runs/impl_1/runme.log
+current_sim simulation_3
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_top_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/ttc_encoder/ttc_data_generation.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ttc_data_generation
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto c5fa44d5fb1046d0b321c20e8140b53c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling architecture mmcme2_adv_v of entity unisim.MMCME2_ADV [\MMCME2_ADV(clkfbout_mult_f=25.0...]
+Compiling architecture mmcm_adv_v of entity unisim.MMCM_ADV [\MMCM_ADV(clkfbout_mult_f=25.0,c...]
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture xilinx of entity xil_defaultlib.pll_160MHz [pll_160mhz_default]
+Compiling architecture behavioral of entity xil_defaultlib.cdr2a_b_clk [cdr2a_b_clk_default]
+Compiling architecture arc of entity xil_defaultlib.serialb_com [\serialb_com(include_hamming=tru...]
+Compiling architecture core of entity xil_defaultlib.ttc_decoder_core [ttc_decoder_core_default]
+Compiling architecture top of entity xil_defaultlib.ttc_fmc_wrapper [ttc_fmc_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttc_data_generation [ttc_data_generation_default]
+Compiling architecture rtl of entity xil_defaultlib.d_ff [d_ff_default]
+Compiling architecture ibufds_v of entity unisim.IBUFDS [\IBUFDS(iostandard="default")(1,...]
+Compiling architecture mmcme2_adv_v of entity unisim.MMCME2_ADV [\MMCME2_ADV(bandwidth="optimized...]
+Compiling architecture structure of entity xil_defaultlib.mmcm [mmcm_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttcvi_encoder [\ttcvi_encoder(include_hamming=t...]
+Compiling architecture behavioral of entity xil_defaultlib.ttcvi_emulation [ttcvi_emulation_default]
+Compiling architecture rtl of entity xil_defaultlib.jk_ff [jk_ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttcvx_emulation [ttcvx_emulation_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttc_enc_wrapper [ttc_enc_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttc_encoder_data_gen [ttc_encoder_data_gen_default]
+Compiling architecture behavioral of entity xil_defaultlib.top [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_top
+Built simulation snapshot tb_top_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 2226.160 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 2226.160 ; gain = 0.000
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+Note: simulation started
+Time: 100 ns  Iteration: 0  Process: /tb_top/line__148  File: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/tb/tb_top.vhd
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 2226.160 ; gain = 0.000
+run 1000 us
+run: Time (s): cpu = 00:00:19 ; elapsed = 00:00:38 . Memory (MB): peak = 2226.160 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_top_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/ttc_encoder/ttc_data_generation.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ttc_data_generation
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto c5fa44d5fb1046d0b321c20e8140b53c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling architecture mmcme2_adv_v of entity unisim.MMCME2_ADV [\MMCME2_ADV(clkfbout_mult_f=25.0...]
+Compiling architecture mmcm_adv_v of entity unisim.MMCM_ADV [\MMCM_ADV(clkfbout_mult_f=25.0,c...]
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture xilinx of entity xil_defaultlib.pll_160MHz [pll_160mhz_default]
+Compiling architecture behavioral of entity xil_defaultlib.cdr2a_b_clk [cdr2a_b_clk_default]
+Compiling architecture arc of entity xil_defaultlib.serialb_com [\serialb_com(include_hamming=tru...]
+Compiling architecture core of entity xil_defaultlib.ttc_decoder_core [ttc_decoder_core_default]
+Compiling architecture top of entity xil_defaultlib.ttc_fmc_wrapper [ttc_fmc_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttc_data_generation [ttc_data_generation_default]
+Compiling architecture rtl of entity xil_defaultlib.d_ff [d_ff_default]
+Compiling architecture ibufds_v of entity unisim.IBUFDS [\IBUFDS(iostandard="default")(1,...]
+Compiling architecture mmcme2_adv_v of entity unisim.MMCME2_ADV [\MMCME2_ADV(bandwidth="optimized...]
+Compiling architecture structure of entity xil_defaultlib.mmcm [mmcm_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttcvi_encoder [\ttcvi_encoder(include_hamming=t...]
+Compiling architecture behavioral of entity xil_defaultlib.ttcvi_emulation [ttcvi_emulation_default]
+Compiling architecture rtl of entity xil_defaultlib.jk_ff [jk_ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttcvx_emulation [ttcvx_emulation_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttc_enc_wrapper [ttc_enc_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttc_encoder_data_gen [ttc_encoder_data_gen_default]
+Compiling architecture behavioral of entity xil_defaultlib.top [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_top
+Built simulation snapshot tb_top_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 2226.160 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 2226.160 ; gain = 0.000
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+Note: simulation started
+Time: 100 ns  Iteration: 0  Process: /tb_top/line__148  File: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/tb/tb_top.vhd
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 2226.160 ; gain = 0.000
+run 1000 us
+run: Time (s): cpu = 00:00:19 ; elapsed = 00:00:39 . Memory (MB): peak = 2226.160 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_top_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/ttc_encoder/ttc_data_generation.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ttc_data_generation
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto c5fa44d5fb1046d0b321c20e8140b53c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling architecture mmcme2_adv_v of entity unisim.MMCME2_ADV [\MMCME2_ADV(clkfbout_mult_f=25.0...]
+Compiling architecture mmcm_adv_v of entity unisim.MMCM_ADV [\MMCM_ADV(clkfbout_mult_f=25.0,c...]
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture xilinx of entity xil_defaultlib.pll_160MHz [pll_160mhz_default]
+Compiling architecture behavioral of entity xil_defaultlib.cdr2a_b_clk [cdr2a_b_clk_default]
+Compiling architecture arc of entity xil_defaultlib.serialb_com [\serialb_com(include_hamming=tru...]
+Compiling architecture core of entity xil_defaultlib.ttc_decoder_core [ttc_decoder_core_default]
+Compiling architecture top of entity xil_defaultlib.ttc_fmc_wrapper [ttc_fmc_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttc_data_generation [ttc_data_generation_default]
+Compiling architecture rtl of entity xil_defaultlib.d_ff [d_ff_default]
+Compiling architecture ibufds_v of entity unisim.IBUFDS [\IBUFDS(iostandard="default")(1,...]
+Compiling architecture mmcme2_adv_v of entity unisim.MMCME2_ADV [\MMCME2_ADV(bandwidth="optimized...]
+Compiling architecture structure of entity xil_defaultlib.mmcm [mmcm_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttcvi_encoder [\ttcvi_encoder(include_hamming=t...]
+Compiling architecture behavioral of entity xil_defaultlib.ttcvi_emulation [ttcvi_emulation_default]
+Compiling architecture rtl of entity xil_defaultlib.jk_ff [jk_ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttcvx_emulation [ttcvx_emulation_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttc_enc_wrapper [ttc_enc_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttc_encoder_data_gen [ttc_encoder_data_gen_default]
+Compiling architecture behavioral of entity xil_defaultlib.top [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_top
+Built simulation snapshot tb_top_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 2226.160 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 2226.160 ; gain = 0.000
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+Note: simulation started
+Time: 100 ns  Iteration: 0  Process: /tb_top/line__148  File: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/tb/tb_top.vhd
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 2226.160 ; gain = 0.000
+run 1000 us
+run: Time (s): cpu = 00:00:11 ; elapsed = 00:00:37 . Memory (MB): peak = 2226.160 ; gain = 0.000
+current_sim simulation_7
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_design
+launch_simulation -mode post-implementation -type timing
+INFO: [Vivado 12-5682] Launching post-implementation timing simulation in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-20] The target language is set to VHDL, it is not supported for simulation type 'timing', using Verilog instead.
+INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.105 . Memory (MB): peak = 2226.160 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.105 . Memory (MB): peak = 2226.160 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [SIM-utils-31] Writing simulation netlist file for design 'impl_1'...
+INFO: [SIM-utils-32] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim/tb_top_time_impl.v"
+INFO: [SIM-utils-34] Writing SDF file...
+INFO: [SIM-utils-35] write_sdf -mode timesim -process_corner slow -force -file "C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim/tb_top_time_impl.sdf"
+INFO: [SIM-utils-36] Netlist generated:C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim/tb_top_time_impl.v
+INFO: [SIM-utils-37] SDF generated:C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim/tb_top_time_impl.sdf
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim'
+"xvlog --incr --relax -prj tb_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim/tb_top_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cdr2a_b_clk
+INFO: [VRFC 10-311] analyzing module d_ff
+INFO: [VRFC 10-311] analyzing module d_ff_0
+INFO: [VRFC 10-311] analyzing module d_ff_1
+INFO: [VRFC 10-311] analyzing module jk_ff
+INFO: [VRFC 10-311] analyzing module mmcm
+INFO: [VRFC 10-311] analyzing module pll_160MHz
+INFO: [VRFC 10-311] analyzing module serialb_com
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-311] analyzing module ttc_data_generation
+INFO: [VRFC 10-311] analyzing module ttc_decoder_core
+INFO: [VRFC 10-311] analyzing module ttc_enc_wrapper
+INFO: [VRFC 10-311] analyzing module ttc_encoder_data_gen
+INFO: [VRFC 10-311] analyzing module ttc_fmc_wrapper
+INFO: [VRFC 10-311] analyzing module ttcvi_emulation
+INFO: [VRFC 10-311] analyzing module ttcvi_encoder
+INFO: [VRFC 10-311] analyzing module ttcvx_emulation
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj tb_top_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto c5fa44d5fb1046d0b321c20e8140b53c --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot tb_top_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "tb_top_time_impl.sdf", for root module "tb_top/ins_top".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "tb_top_time_impl.sdf", for root module "tb_top/ins_top".
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.FDCE_default
+Compiling module xil_defaultlib.d_ff
+Compiling module xil_defaultlib.d_ff_0
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.IBUFDS(IOSTANDARD="default")
+Compiling module simprims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=4.0,C...
+Compiling module xil_defaultlib.mmcm
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.LUT5
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.FDRE_default
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.MUXF7
+Compiling module xil_defaultlib.ttcvi_encoder
+Compiling module xil_defaultlib.ttcvi_emulation
+Compiling module xil_defaultlib.d_ff_1
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module xil_defaultlib.jk_ff
+Compiling module xil_defaultlib.ttcvx_emulation
+Compiling module simprims_ver.CARRY4
+Compiling module simprims_ver.FDPE_default
+Compiling module xil_defaultlib.ttc_enc_wrapper
+Compiling module simprims_ver.GND
+Compiling module xil_defaultlib.ttc_data_generation
+Compiling module xil_defaultlib.ttc_encoder_data_gen
+Compiling module simprims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=25.0,...
+Compiling module xil_defaultlib.pll_160MHz
+Compiling module simprims_ver.FDSE_default
+Compiling module xil_defaultlib.cdr2a_b_clk
+Compiling module xil_defaultlib.serialb_com
+Compiling module xil_defaultlib.ttc_decoder_core
+Compiling module xil_defaultlib.ttc_fmc_wrapper
+Compiling module xil_defaultlib.top
+Compiling architecture behavioral of entity xil_defaultlib.tb_top
+Built simulation snapshot tb_top_time_impl
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 2237.023 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '11' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_top_time_impl -key {Post-Implementation:sim_1:Timing:tb_top} -tclbatch {tb_top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+source tb_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: simulation started
+Time: 100 ns  Iteration: 0  Process: /tb_top/line__148  File: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/tb/tb_top.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_top_time_impl' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:13 ; elapsed = 00:00:23 . Memory (MB): peak = 2237.023 ; gain = 10.863
+run 1000 us
+run: Time (s): cpu = 00:00:22 ; elapsed = 00:00:40 . Memory (MB): peak = 2237.023 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sat Oct  6 20:47:28 2018] Launched synth_1...
+Run output will be captured here: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.runs/synth_1/runme.log
+[Sat Oct  6 20:47:28 2018] Launched impl_1...
+Run output will be captured here: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.runs/impl_1/runme.log
+current_sim simulation_3
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_top_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto c5fa44d5fb1046d0b321c20e8140b53c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+Note: simulation started
+Time: 100 ns  Iteration: 0  Process: /tb_top/line__148  File: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/tb/tb_top.vhd
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2238.004 ; gain = 0.137
+current_sim simulation_8
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_design
+launch_simulation -mode post-implementation -type timing
+INFO: [Vivado 12-5682] Launching post-implementation timing simulation in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-20] The target language is set to VHDL, it is not supported for simulation type 'timing', using Verilog instead.
+INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.109 . Memory (MB): peak = 2238.004 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.111 . Memory (MB): peak = 2238.004 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [SIM-utils-31] Writing simulation netlist file for design 'impl_1'...
+INFO: [SIM-utils-32] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim/tb_top_time_impl.v"
+INFO: [SIM-utils-34] Writing SDF file...
+INFO: [SIM-utils-35] write_sdf -mode timesim -process_corner slow -force -file "C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim/tb_top_time_impl.sdf"
+INFO: [SIM-utils-36] Netlist generated:C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim/tb_top_time_impl.v
+INFO: [SIM-utils-37] SDF generated:C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim/tb_top_time_impl.sdf
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim'
+"xvlog --incr --relax -prj tb_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim/tb_top_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cdr2a_b_clk
+INFO: [VRFC 10-311] analyzing module d_ff
+INFO: [VRFC 10-311] analyzing module d_ff_0
+INFO: [VRFC 10-311] analyzing module d_ff_1
+INFO: [VRFC 10-311] analyzing module jk_ff
+INFO: [VRFC 10-311] analyzing module mmcm
+INFO: [VRFC 10-311] analyzing module pll_160MHz
+INFO: [VRFC 10-311] analyzing module serialb_com
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-311] analyzing module ttc_data_generation
+INFO: [VRFC 10-311] analyzing module ttc_decoder_core
+INFO: [VRFC 10-311] analyzing module ttc_enc_wrapper
+INFO: [VRFC 10-311] analyzing module ttc_encoder_data_gen
+INFO: [VRFC 10-311] analyzing module ttc_fmc_wrapper
+INFO: [VRFC 10-311] analyzing module ttcvi_emulation
+INFO: [VRFC 10-311] analyzing module ttcvi_encoder
+INFO: [VRFC 10-311] analyzing module ttcvx_emulation
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj tb_top_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto c5fa44d5fb1046d0b321c20e8140b53c --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot tb_top_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "tb_top_time_impl.sdf", for root module "tb_top/ins_top".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "tb_top_time_impl.sdf", for root module "tb_top/ins_top".
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.FDCE_default
+Compiling module xil_defaultlib.d_ff
+Compiling module xil_defaultlib.d_ff_0
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.IBUFDS(IOSTANDARD="default")
+Compiling module simprims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=4.0,C...
+Compiling module xil_defaultlib.mmcm
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.LUT5
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.FDRE_default
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.MUXF7
+Compiling module xil_defaultlib.ttcvi_encoder
+Compiling module xil_defaultlib.ttcvi_emulation
+Compiling module xil_defaultlib.d_ff_1
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module xil_defaultlib.jk_ff
+Compiling module xil_defaultlib.ttcvx_emulation
+Compiling module simprims_ver.CARRY4
+Compiling module simprims_ver.FDPE_default
+Compiling module xil_defaultlib.ttc_enc_wrapper
+Compiling module simprims_ver.GND
+Compiling module xil_defaultlib.ttc_data_generation
+Compiling module xil_defaultlib.ttc_encoder_data_gen
+Compiling module simprims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=25.0,...
+Compiling module xil_defaultlib.pll_160MHz
+Compiling module simprims_ver.FDSE_default
+Compiling module xil_defaultlib.cdr2a_b_clk
+Compiling module xil_defaultlib.serialb_com
+Compiling module xil_defaultlib.ttc_decoder_core
+Compiling module xil_defaultlib.ttc_fmc_wrapper
+Compiling module xil_defaultlib.top
+Compiling architecture behavioral of entity xil_defaultlib.tb_top
+Built simulation snapshot tb_top_time_impl
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 2242.805 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '11' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_top_time_impl -key {Post-Implementation:sim_1:Timing:tb_top} -tclbatch {tb_top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+source tb_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: simulation started
+Time: 100 ns  Iteration: 0  Process: /tb_top/line__148  File: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/tb/tb_top.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_top_time_impl' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:13 ; elapsed = 00:00:23 . Memory (MB): peak = 2242.805 ; gain = 4.801
+run all
+run: Time (s): cpu = 00:00:35 ; elapsed = 00:01:45 . Memory (MB): peak = 2242.805 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.runs/synth_1
+
+launch_runs impl_1 -jobs 8
+[Sat Oct  6 21:39:32 2018] Launched synth_1...
+Run output will be captured here: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.runs/synth_1/runme.log
+[Sat Oct  6 21:39:32 2018] Launched impl_1...
+Run output will be captured here: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.runs/impl_1/runme.log
+current_sim simulation_3
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_top_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/ttc_encoder/ttc_data_generation.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ttc_data_generation
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto c5fa44d5fb1046d0b321c20e8140b53c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling architecture mmcme2_adv_v of entity unisim.MMCME2_ADV [\MMCME2_ADV(clkfbout_mult_f=25.0...]
+Compiling architecture mmcm_adv_v of entity unisim.MMCM_ADV [\MMCM_ADV(clkfbout_mult_f=25.0,c...]
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture xilinx of entity xil_defaultlib.pll_160MHz [pll_160mhz_default]
+Compiling architecture behavioral of entity xil_defaultlib.cdr2a_b_clk [cdr2a_b_clk_default]
+Compiling architecture arc of entity xil_defaultlib.serialb_com [\serialb_com(include_hamming=tru...]
+Compiling architecture core of entity xil_defaultlib.ttc_decoder_core [ttc_decoder_core_default]
+Compiling architecture top of entity xil_defaultlib.ttc_fmc_wrapper [ttc_fmc_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttc_data_generation [ttc_data_generation_default]
+Compiling architecture rtl of entity xil_defaultlib.d_ff [d_ff_default]
+Compiling architecture ibufds_v of entity unisim.IBUFDS [\IBUFDS(iostandard="default")(1,...]
+Compiling architecture mmcme2_adv_v of entity unisim.MMCME2_ADV [\MMCME2_ADV(bandwidth="optimized...]
+Compiling architecture structure of entity xil_defaultlib.mmcm [mmcm_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttcvi_encoder [\ttcvi_encoder(include_hamming=t...]
+Compiling architecture behavioral of entity xil_defaultlib.ttcvi_emulation [ttcvi_emulation_default]
+Compiling architecture rtl of entity xil_defaultlib.jk_ff [jk_ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttcvx_emulation [ttcvx_emulation_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttc_enc_wrapper [ttc_enc_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttc_encoder_data_gen [ttc_encoder_data_gen_default]
+Compiling architecture behavioral of entity xil_defaultlib.top [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_top
+Built simulation snapshot tb_top_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 2243.320 ; gain = 0.000
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+Note: simulation started
+Time: 100 ns  Iteration: 0  Process: /tb_top/line__148  File: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/tb/tb_top.vhd
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 2243.320 ; gain = 0.000
+run 1000 us
+run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 2243.789 ; gain = 0.000
+run 1000 us
+run: Time (s): cpu = 00:00:11 ; elapsed = 00:00:37 . Memory (MB): peak = 2243.789 ; gain = 0.000
+current_sim simulation_9
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_design
+launch_simulation -mode post-implementation -type timing
+INFO: [Vivado 12-5682] Launching post-implementation timing simulation in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-20] The target language is set to VHDL, it is not supported for simulation type 'timing', using Verilog instead.
+INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.104 . Memory (MB): peak = 2243.789 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.105 . Memory (MB): peak = 2243.789 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [SIM-utils-31] Writing simulation netlist file for design 'impl_1'...
+INFO: [SIM-utils-32] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim/tb_top_time_impl.v"
+INFO: [SIM-utils-34] Writing SDF file...
+INFO: [SIM-utils-35] write_sdf -mode timesim -process_corner slow -force -file "C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim/tb_top_time_impl.sdf"
+INFO: [SIM-utils-36] Netlist generated:C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim/tb_top_time_impl.v
+INFO: [SIM-utils-37] SDF generated:C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim/tb_top_time_impl.sdf
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim'
+"xvlog --incr --relax -prj tb_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim/tb_top_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cdr2a_b_clk
+INFO: [VRFC 10-311] analyzing module d_ff
+INFO: [VRFC 10-311] analyzing module d_ff_0
+INFO: [VRFC 10-311] analyzing module d_ff_1
+INFO: [VRFC 10-311] analyzing module jk_ff
+INFO: [VRFC 10-311] analyzing module mmcm
+INFO: [VRFC 10-311] analyzing module pll_160MHz
+INFO: [VRFC 10-311] analyzing module serialb_com
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-311] analyzing module ttc_data_generation
+INFO: [VRFC 10-311] analyzing module ttc_decoder_core
+INFO: [VRFC 10-311] analyzing module ttc_enc_wrapper
+INFO: [VRFC 10-311] analyzing module ttc_encoder_data_gen
+INFO: [VRFC 10-311] analyzing module ttc_fmc_wrapper
+INFO: [VRFC 10-311] analyzing module ttcvi_emulation
+INFO: [VRFC 10-311] analyzing module ttcvi_encoder
+INFO: [VRFC 10-311] analyzing module ttcvx_emulation
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj tb_top_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto c5fa44d5fb1046d0b321c20e8140b53c --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot tb_top_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "tb_top_time_impl.sdf", for root module "tb_top/ins_top".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "tb_top_time_impl.sdf", for root module "tb_top/ins_top".
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.FDCE_default
+Compiling module xil_defaultlib.d_ff
+Compiling module xil_defaultlib.d_ff_0
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.IBUFDS(IOSTANDARD="default")
+Compiling module simprims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=4.0,C...
+Compiling module xil_defaultlib.mmcm
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.LUT5
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.FDRE_default
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.MUXF7
+Compiling module xil_defaultlib.ttcvi_encoder
+Compiling module xil_defaultlib.ttcvi_emulation
+Compiling module xil_defaultlib.d_ff_1
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module xil_defaultlib.jk_ff
+Compiling module xil_defaultlib.ttcvx_emulation
+Compiling module simprims_ver.CARRY4
+Compiling module simprims_ver.FDPE_default
+Compiling module xil_defaultlib.ttc_enc_wrapper
+Compiling module simprims_ver.GND
+Compiling module xil_defaultlib.ttc_data_generation
+Compiling module xil_defaultlib.ttc_encoder_data_gen
+Compiling module simprims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=25.0,...
+Compiling module xil_defaultlib.pll_160MHz
+Compiling module simprims_ver.FDSE_default
+Compiling module xil_defaultlib.cdr2a_b_clk
+Compiling module xil_defaultlib.serialb_com
+Compiling module xil_defaultlib.ttc_decoder_core
+Compiling module xil_defaultlib.ttc_fmc_wrapper
+Compiling module xil_defaultlib.top
+Compiling architecture behavioral of entity xil_defaultlib.tb_top
+Built simulation snapshot tb_top_time_impl
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 2250.457 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '11' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_top_time_impl -key {Post-Implementation:sim_1:Timing:tb_top} -tclbatch {tb_top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+source tb_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: simulation started
+Time: 100 ns  Iteration: 0  Process: /tb_top/line__148  File: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/tb/tb_top.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_top_time_impl' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 2250.457 ; gain = 6.668
+run 1000 us
+run: Time (s): cpu = 00:00:25 ; elapsed = 00:00:46 . Memory (MB): peak = 2250.457 ; gain = 0.000
+current_wave_config {Untitled 10}
+Untitled 10
+add_wave {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc_data_generation/brc_data_out}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc_data_generation/addr_data_out}} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 1000 us
+Note: simulation started
+Time: 100 ns  Iteration: 0  Process: /tb_top/line__148  File: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/tb/tb_top.vhd
+run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2250.457 ; gain = 0.000
+run 1000 us
+run: Time (s): cpu = 00:00:09 ; elapsed = 00:00:44 . Memory (MB): peak = 2250.457 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sat Oct  6 21:45:09 2018] Launched synth_1...
+Run output will be captured here: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.runs/synth_1/runme.log
+[Sat Oct  6 21:45:09 2018] Launched impl_1...
+Run output will be captured here: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.runs/impl_1/runme.log
+current_sim simulation_3
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_top_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/ttc_encoder/ttc_data_generation.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ttc_data_generation
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto c5fa44d5fb1046d0b321c20e8140b53c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling architecture mmcme2_adv_v of entity unisim.MMCME2_ADV [\MMCME2_ADV(clkfbout_mult_f=25.0...]
+Compiling architecture mmcm_adv_v of entity unisim.MMCM_ADV [\MMCM_ADV(clkfbout_mult_f=25.0,c...]
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture xilinx of entity xil_defaultlib.pll_160MHz [pll_160mhz_default]
+Compiling architecture behavioral of entity xil_defaultlib.cdr2a_b_clk [cdr2a_b_clk_default]
+Compiling architecture arc of entity xil_defaultlib.serialb_com [\serialb_com(include_hamming=tru...]
+Compiling architecture core of entity xil_defaultlib.ttc_decoder_core [ttc_decoder_core_default]
+Compiling architecture top of entity xil_defaultlib.ttc_fmc_wrapper [ttc_fmc_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttc_data_generation [ttc_data_generation_default]
+Compiling architecture rtl of entity xil_defaultlib.d_ff [d_ff_default]
+Compiling architecture ibufds_v of entity unisim.IBUFDS [\IBUFDS(iostandard="default")(1,...]
+Compiling architecture mmcme2_adv_v of entity unisim.MMCME2_ADV [\MMCME2_ADV(bandwidth="optimized...]
+Compiling architecture structure of entity xil_defaultlib.mmcm [mmcm_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttcvi_encoder [\ttcvi_encoder(include_hamming=t...]
+Compiling architecture behavioral of entity xil_defaultlib.ttcvi_emulation [ttcvi_emulation_default]
+Compiling architecture rtl of entity xil_defaultlib.jk_ff [jk_ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttcvx_emulation [ttcvx_emulation_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttc_enc_wrapper [ttc_enc_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttc_encoder_data_gen [ttc_encoder_data_gen_default]
+Compiling architecture behavioral of entity xil_defaultlib.top [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_top
+Built simulation snapshot tb_top_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 2252.043 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 2252.043 ; gain = 0.000
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+Note: simulation started
+Time: 100 ns  Iteration: 0  Process: /tb_top/line__148  File: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/tb/tb_top.vhd
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 2252.043 ; gain = 0.000
+run 1000 us
+run: Time (s): cpu = 00:00:11 ; elapsed = 00:00:36 . Memory (MB): peak = 2252.184 ; gain = 0.105
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_design
+launch_simulation -mode post-implementation -type timing
+INFO: [Vivado 12-5682] Launching post-implementation timing simulation in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-20] The target language is set to VHDL, it is not supported for simulation type 'timing', using Verilog instead.
+INFO: [Netlist 29-17] Analyzing 32 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.110 . Memory (MB): peak = 2252.184 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.111 . Memory (MB): peak = 2252.184 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [SIM-utils-31] Writing simulation netlist file for design 'impl_1'...
+INFO: [SIM-utils-32] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim/tb_top_time_impl.v"
+INFO: [SIM-utils-34] Writing SDF file...
+INFO: [SIM-utils-35] write_sdf -mode timesim -process_corner slow -force -file "C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim/tb_top_time_impl.sdf"
+INFO: [SIM-utils-36] Netlist generated:C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim/tb_top_time_impl.v
+INFO: [SIM-utils-37] SDF generated:C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim/tb_top_time_impl.sdf
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim'
+"xvlog --incr --relax -prj tb_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim/tb_top_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cdr2a_b_clk
+INFO: [VRFC 10-311] analyzing module d_ff
+INFO: [VRFC 10-311] analyzing module d_ff_0
+INFO: [VRFC 10-311] analyzing module d_ff_1
+INFO: [VRFC 10-311] analyzing module jk_ff
+INFO: [VRFC 10-311] analyzing module mmcm
+INFO: [VRFC 10-311] analyzing module pll_160MHz
+INFO: [VRFC 10-311] analyzing module serialb_com
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-311] analyzing module ttc_data_generation
+INFO: [VRFC 10-311] analyzing module ttc_decoder_core
+INFO: [VRFC 10-311] analyzing module ttc_enc_wrapper
+INFO: [VRFC 10-311] analyzing module ttc_encoder_data_gen
+INFO: [VRFC 10-311] analyzing module ttc_fmc_wrapper
+INFO: [VRFC 10-311] analyzing module ttcvi_emulation
+INFO: [VRFC 10-311] analyzing module ttcvi_encoder
+INFO: [VRFC 10-311] analyzing module ttcvx_emulation
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj tb_top_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto c5fa44d5fb1046d0b321c20e8140b53c --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot tb_top_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "tb_top_time_impl.sdf", for root module "tb_top/ins_top".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "tb_top_time_impl.sdf", for root module "tb_top/ins_top".
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.FDCE_default
+Compiling module xil_defaultlib.d_ff
+Compiling module xil_defaultlib.d_ff_0
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.IBUFDS(IOSTANDARD="default")
+Compiling module simprims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=4.0,C...
+Compiling module xil_defaultlib.mmcm
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.LUT5
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.FDRE_default
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.MUXF7
+Compiling module xil_defaultlib.ttcvi_encoder
+Compiling module xil_defaultlib.ttcvi_emulation
+Compiling module xil_defaultlib.d_ff_1
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module xil_defaultlib.jk_ff
+Compiling module xil_defaultlib.ttcvx_emulation
+Compiling module simprims_ver.CARRY4
+Compiling module simprims_ver.FDPE_default
+Compiling module xil_defaultlib.ttc_enc_wrapper
+Compiling module xil_defaultlib.ttc_data_generation
+Compiling module xil_defaultlib.ttc_encoder_data_gen
+Compiling module simprims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=25.0,...
+Compiling module xil_defaultlib.pll_160MHz
+Compiling module simprims_ver.FDSE_default
+Compiling module xil_defaultlib.cdr2a_b_clk
+Compiling module xil_defaultlib.serialb_com
+Compiling module xil_defaultlib.ttc_decoder_core
+Compiling module xil_defaultlib.ttc_fmc_wrapper
+Compiling module xil_defaultlib.top
+Compiling architecture behavioral of entity xil_defaultlib.tb_top
+Built simulation snapshot tb_top_time_impl
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 2252.988 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '13' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_top_time_impl -key {Post-Implementation:sim_1:Timing:tb_top} -tclbatch {tb_top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+source tb_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: simulation started
+Time: 100 ns  Iteration: 0  Process: /tb_top/line__148  File: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/tb/tb_top.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_top_time_impl' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:14 ; elapsed = 00:00:24 . Memory (MB): peak = 2252.988 ; gain = 0.805
+run 1000 us
+run: Time (s): cpu = 00:00:22 ; elapsed = 00:00:40 . Memory (MB): peak = 2252.988 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+check_timing -verbose -name timing_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Oct  6 21:51:56 2018...

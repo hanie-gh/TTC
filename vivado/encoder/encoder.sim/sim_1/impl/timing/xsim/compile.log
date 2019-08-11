@@ -1,0 +1,19 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Amoozegar/Desktop/2018_10_05_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim/tb_top_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cdr2a_b_clk
+INFO: [VRFC 10-311] analyzing module d_ff
+INFO: [VRFC 10-311] analyzing module jk_ff
+INFO: [VRFC 10-311] analyzing module mmcm
+INFO: [VRFC 10-311] analyzing module pll_160MHz
+INFO: [VRFC 10-311] analyzing module serialb_com
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-311] analyzing module ttc_data_generation
+INFO: [VRFC 10-311] analyzing module ttc_decoder_core
+INFO: [VRFC 10-311] analyzing module ttc_enc_wrapper
+INFO: [VRFC 10-311] analyzing module ttc_encoder_data_gen
+INFO: [VRFC 10-311] analyzing module ttc_fmc_wrapper
+INFO: [VRFC 10-311] analyzing module ttcvi_emulation
+INFO: [VRFC 10-311] analyzing module ttcvi_encoder
+INFO: [VRFC 10-311] analyzing module ttcvx_emulation
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Amoozegar/Desktop/2018_10_05_ttctx2ttcrx/tb/tb_top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_top

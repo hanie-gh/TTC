@@ -1,0 +1,15 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../../ttc_encoder/d_ff.vhd" \
+"../../../../../../ttc_encoder/jk_ff.vhd" \
+"../../../../../../ttc_encoder/mmcm.vhdl" \
+"../../../../../../ttc_encoder/ttc_data_generation.vhd" \
+"../../../../../../ttc_encoder/ttc_enc_wrapper.vhd" \
+"../../../../../../ttc_encoder/ttc_encoder_data_gen.vhd" \
+"../../../../../../ttc_encoder/ttcvi_emulation.vhd" \
+"../../../../../../ttc_encoder/ttcvi_encoder.vhd" \
+"../../../../../../ttc_encoder/ttcvx_emulation.vhd" \
+"../../../../../../tb/tb_ttc_encoder_data_generation.vhd" \
+
+# Do not sort compile order
+nosort

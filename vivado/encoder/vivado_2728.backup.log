@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Wed Nov 21 18:11:21 2018
+# Process ID: 2728
+# Current directory: C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/vivado/encoder
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2408 C:\Users\Amoozegar\Desktop\hgh\project\2018_11_21_ttctx2ttcrx\vivado\encoder\encoder.xpr
+# Log file: C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/vivado/encoder/vivado.log
+# Journal file: C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/vivado/encoder\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/vivado/encoder/encoder.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Amoozegar/Desktop/2018_10_05_ttctx2ttcrx/vivado/encoder' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.1/data/ip'.
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Nov 21 18:12:53 2018] Launched synth_1...
+Run output will be captured here: C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/vivado/encoder/encoder.runs/synth_1/runme.log
+[Wed Nov 21 18:12:53 2018] Launched impl_1...
+Run output will be captured here: C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/vivado/encoder/encoder.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 22 12:57:04 2018...

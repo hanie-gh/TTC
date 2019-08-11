@@ -1,0 +1,6 @@
+0.6
+2018.1
+Apr  4 2018
+19:30:32
+C:/Users/Amoozegar/Desktop/2018_10_05_ttctx2ttcrx/tb/tb_top.vhd,1542275418,vhdl,,,,tb_top,,,,,,,,
+C:/Users/Amoozegar/Desktop/2018_10_05_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/impl/timing/xsim/tb_top_time_impl.v,1542275507,verilog,,,,cdr2a_b_clk;d_ff;glbl;jk_ff;mmcm;pll_160MHz;serialb_com;top;ttc_data_generation;ttc_decoder_core;ttc_enc_wrapper;ttc_encoder_data_gen;ttc_fmc_wrapper;ttcvi_emulation;ttcvi_encoder;ttcvx_emulation,,,,,,,,

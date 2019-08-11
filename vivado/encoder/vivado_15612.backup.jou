@@ -1,0 +1,171 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sat Oct  6 16:15:05 2018
+# Process ID: 15612
+# Current directory: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22304 C:\Users\hanie\Documents\project\2018_10_03_ttctx2ttcrx\vivado\encoder\encoder.xpr
+# Log file: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/vivado.log
+# Journal file: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+launch_simulation
+source tb_top.tcl
+restart
+run 1000 us
+run 1000 us
+run all
+run all
+relaunch_sim
+run all
+run 1000 us
+relaunch_sim
+run all
+run 1000 us
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run 1000 us
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/ins_ttcvi/a_ch_out}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/ins_ttcvi/b_ch_out}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/ins_ttcvi/strobe_out}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/ins_ttcvi/ready_rd_a_ch_out}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/ins_ttcvi/ready_rd_b_ch_out}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/ins_ttcvi/clk_in}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/ins_ttcvi/reset_in}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/ins_ttcvi/a_ch_data_in}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/ins_ttcvi/valid_a_ch_data_in}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/ins_ttcvi/brc_data_in}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/ins_ttcvi/valid_brc_data_in}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/ins_ttcvi/addr_data_in}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/ins_ttcvi/valid_addr_data_in}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/ins_ttcvi/b_ch_brc_valid_s}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/ins_ttcvi/b_ch_addr_valid_s}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/ins_ttcvi/ready_rd_b_ch_s}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/ins_ttcvi/a_ch_strobe_s}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/ins_ttcvi/b_ch_strobe_s}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/ins_ttcvi/b_ch_brc_s}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/ins_ttcvi/b_ch_addr_s}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/ins_ttcvi/addr_a14_s}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/ins_ttcvi/addr_e_s}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/ins_ttcvi/addr_s8_s}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/ins_ttcvi/addr_d8_s}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/ins_ttcvi/brc_t2_s}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/ins_ttcvi/brc_d4_s}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/ins_ttcvi/brc_e_s}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/ins_ttcvi/brc_b_s}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/ins_ttcvi/counter_b_ch}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/ins_ttcvi/state}} 
+restart
+run 1000 us
+relaunch_sim
+run 1000 us
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+current_wave_config {Untitled 1*}
+add_wave {{/tb_top/clk_ttc_from_rx}} {{/tb_top/brc_strobe_from_rx}} {{/tb_top/addr_strobe_from_rx}} {{/tb_top/l1a_from_rx}} {{/tb_top/addr_a14_from_rx}} {{/tb_top/addr_e_from_rx}} {{/tb_top/addr_s8_from_rx}} {{/tb_top/addr_d8_from_rx}} {{/tb_top/brc_t2_from_rx}} {{/tb_top/brc_d4_from_rx}} {{/tb_top/brc_e_from_rx}} {{/tb_top/brc_b_from_rx}} {{/tb_top/b_ch_brc_from_rx}} {{/tb_top/b_ch_addr_from_rx}} {{/tb_top/ready_from_rx}} {{/tb_top/ready_from_ttc_enc}} {{/tb_top/ttc_clk_encoder}} {{/tb_top/clk_in_160}} {{/tb_top/clk_in_200_p}} {{/tb_top/clk_in_200_n}} {{/tb_top/reset}} {{/tb_top/stopSimulation}} {{/tb_top/startSimulation}} {{/tb_top/clk_ttc_period}} {{/tb_top/period_80}} {{/tb_top/clk_cdr_period}} {{/tb_top/period_200}} 
+run 1000 us
+restart
+run 1000 us
+relaunch_sim
+run 1000 us
+run 1000 us
+run 1000 us
+run 1000 us
+launch_simulation -mode post-implementation -type timing
+launch_simulation -mode post-implementation -type timing
+source tb_top.tcl
+restart
+run 1000 us
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+current_sim simulation_1
+close_sim
+launch_simulation
+source tb_top.tcl
+restart
+run 1000 us
+relaunch_sim
+run 1000 us
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+relaunch_sim
+current_sim simulation_2
+close_sim
+relaunch_sim
+run 1000 us
+close_design
+launch_simulation -mode post-implementation -type timing
+source tb_top.tcl
+run 1000 us
+run 1000 us
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+refresh_design
+close_sim
+launch_simulation -mode post-implementation -type timing
+source tb_top.tcl
+run 1000 us
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+close_sim
+close_design
+launch_simulation -mode post-implementation -type timing
+source tb_top.tcl
+run 1000 us
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+current_sim simulation_3
+relaunch_sim
+current_sim simulation_6
+close_sim
+close_design
+launch_simulation -mode post-implementation -type timing
+source tb_top.tcl
+run 1000 us
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+current_sim simulation_3
+relaunch_sim
+run 1000 us
+relaunch_sim
+run 1000 us
+relaunch_sim
+run 1000 us
+current_sim simulation_7
+close_sim
+close_design
+launch_simulation -mode post-implementation -type timing
+source tb_top.tcl
+run 1000 us
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+current_sim simulation_3
+relaunch_sim
+current_sim simulation_8
+close_sim
+close_design
+launch_simulation -mode post-implementation -type timing
+source tb_top.tcl
+run all
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+current_sim simulation_3
+relaunch_sim
+run 1000 us
+run 1000 us
+current_sim simulation_9
+close_sim
+close_design
+launch_simulation -mode post-implementation -type timing
+source tb_top.tcl
+run 1000 us
+current_wave_config {Untitled 10}
+add_wave {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc_data_generation/brc_data_out}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc_data_generation/addr_data_out}} 
+restart
+run 1000 us
+run 1000 us
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+current_sim simulation_3
+relaunch_sim
+run 1000 us
+close_sim
+close_sim
+close_design
+launch_simulation -mode post-implementation -type timing
+source tb_top.tcl
+run 1000 us
+close_sim
+check_timing -verbose -name timing_1

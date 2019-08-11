@@ -1,0 +1,785 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+****** Vivado v2018.1 (64-bit)
+  **** SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+  **** IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: synth_design -top top -part xc7k325tffg900-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5704 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 410.629 ; gain = 102.012
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc/top.vhd:70]
+INFO: [Synth 8-3491] module 'ttc_fmc_wrapper' declared at 'C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc_decoder/ttc_fmc_wrapper_xilinx.vhd:13' bound to instance 'ins_ttcrx' of component 'ttc_fmc_wrapper' [C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc/top.vhd:130]
+INFO: [Synth 8-638] synthesizing module 'ttc_fmc_wrapper' [C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc_decoder/ttc_fmc_wrapper_xilinx.vhd:50]
+INFO: [Synth 8-638] synthesizing module 'pll_160MHz' [C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc_decoder/pll_160MHz.vhd:86]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 25.000000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKIN1_PERIOD bound to: 6.250000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 6.250000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT1_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT4_CASCADE bound to: 0 - type: bool 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLOCK_HOLD bound to: 0 - type: bool 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 4 - type: integer 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.000000 - type: float 
+	Parameter STARTUP_WAIT bound to: 0 - type: bool 
+INFO: [Synth 8-113] binding component instance 'mmcm_adv_inst' to cell 'MMCM_ADV' [C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc_decoder/pll_160MHz.vhd:127]
+INFO: [Synth 8-113] binding component instance 'clkf_buf' to cell 'BUFG' [C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc_decoder/pll_160MHz.vhd:187]
+INFO: [Synth 8-113] binding component instance 'clkout1_buf' to cell 'BUFG' [C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc_decoder/pll_160MHz.vhd:193]
+INFO: [Synth 8-256] done synthesizing module 'pll_160MHz' (1#1) [C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc_decoder/pll_160MHz.vhd:86]
+INFO: [Synth 8-638] synthesizing module 'ttc_decoder_core' [C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc_decoder/ttc_decoder_core.vhd:128]
+INFO: [Synth 8-638] synthesizing module 'cdr2a_b_clk' [C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc_decoder/cdr2a_b_clk.vhd:97]
+	Parameter pll_locked_delay bound to: 200 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cdr2a_b_clk' (2#1) [C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc_decoder/cdr2a_b_clk.vhd:97]
+INFO: [Synth 8-638] synthesizing module 'serialb_com' [C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc_decoder/TTC_hamming_decoder_alme.vhd:56]
+	Parameter include_hamming bound to: 1 - type: bool 
+INFO: [Synth 8-256] done synthesizing module 'serialb_com' (3#1) [C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc_decoder/TTC_hamming_decoder_alme.vhd:56]
+WARNING: [Synth 8-6014] Unused sequential element brc_reg was removed.  [C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc_decoder/ttc_decoder_core.vhd:220]
+WARNING: [Synth 8-6014] Unused sequential element add_reg was removed.  [C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc_decoder/ttc_decoder_core.vhd:221]
+INFO: [Synth 8-256] done synthesizing module 'ttc_decoder_core' (4#1) [C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc_decoder/ttc_decoder_core.vhd:128]
+INFO: [Synth 8-256] done synthesizing module 'ttc_fmc_wrapper' (5#1) [C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc_decoder/ttc_fmc_wrapper_xilinx.vhd:50]
+INFO: [Synth 8-3491] module 'ttc_encoder_data_gen' declared at 'C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc_encoder/ttc_encoder_data_gen.vhd:29' bound to instance 'ins_ttc_encoder' of component 'ttc_encoder_data_gen' [C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc/top.vhd:156]
+INFO: [Synth 8-638] synthesizing module 'ttc_encoder_data_gen' [C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc_encoder/ttc_encoder_data_gen.vhd:45]
+INFO: [Synth 8-3491] module 'ttc_data_generation' declared at 'C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc_encoder/ttc_data_generation.vhd:33' bound to instance 'ins_ttc_data_generation' of component 'ttc_data_generation' [C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc_encoder/ttc_encoder_data_gen.vhd:135]
+INFO: [Synth 8-638] synthesizing module 'ttc_data_generation' [C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc_encoder/ttc_data_generation.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'ttc_data_generation' (6#1) [C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc_encoder/ttc_data_generation.vhd:49]
+INFO: [Synth 8-3491] module 'ttc_enc_wrapper' declared at 'C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc_encoder/ttc_enc_wrapper.vhd:30' bound to instance 'ins_ttc' of component 'ttc_enc_wrapper' [C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc_encoder/ttc_encoder_data_gen.vhd:149]
+INFO: [Synth 8-638] synthesizing module 'ttc_enc_wrapper' [C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc_encoder/ttc_enc_wrapper.vhd:57]
+INFO: [Synth 8-3491] module 'mmcm' declared at 'C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc_encoder/mmcm.vhdl:33' bound to instance 'ins_clk_wizard' of component 'mmcm' [C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc_encoder/ttc_enc_wrapper.vhd:235]
+INFO: [Synth 8-638] synthesizing module 'mmcm' [C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc_encoder/mmcm.vhdl:47]
+INFO: [Synth 8-113] binding component instance 'clkf_buf' to cell 'BUFG' [C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc_encoder/mmcm.vhdl:62]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: 0 - type: bool 
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: default - type: string 
+INFO: [Synth 8-113] binding component instance 'clkin_ibufds' to cell 'IBUFDS' [C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc_encoder/mmcm.vhdl:68]
+INFO: [Synth 8-113] binding component instance 'clkout1_buf' to cell 'BUFG' [C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc_encoder/mmcm.vhdl:78]
+INFO: [Synth 8-113] binding component instance 'clkout2_buf' to cell 'BUFG' [C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc_encoder/mmcm.vhdl:84]
+INFO: [Synth 8-113] binding component instance 'clkout3_buf' to cell 'BUFG' [C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc_encoder/mmcm.vhdl:90]
+INFO: [Synth 8-113] binding component instance 'clkout4_buf' to cell 'BUFG' [C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc_encoder/mmcm.vhdl:96]
+INFO: [Synth 8-113] binding component instance 'clkout5_buf' to cell 'BUFG' [C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc_encoder/mmcm.vhdl:102]
+INFO: [Synth 8-113] binding component instance 'clkout6_buf' to cell 'BUFG' [C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc_encoder/mmcm.vhdl:108]
+	Parameter BANDWIDTH bound to: optimized - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 4.000000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKIN1_PERIOD bound to: 5.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 20.000000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT1_DIVIDE bound to: 10 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT2_DIVIDE bound to: 5 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT4_CASCADE bound to: 0 - type: bool 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter COMPENSATION bound to: zhold - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.000000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.000000 - type: float 
+	Parameter SS_EN bound to: false - type: string 
+	Parameter SS_MODE bound to: center_high - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: 0 - type: bool 
+INFO: [Synth 8-113] binding component instance 'mmcm_adv_inst' to cell 'MMCME2_ADV' [C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc_encoder/mmcm.vhdl:116]
+INFO: [Synth 8-256] done synthesizing module 'mmcm' (7#1) [C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc_encoder/mmcm.vhdl:47]
+INFO: [Synth 8-3491] module 'ttcvi_emulation' declared at 'C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc_encoder/ttcvi_emulation.vhd:37' bound to instance 'ins_ttcvi' of component 'ttcvi_emulation' [C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc_encoder/ttc_enc_wrapper.vhd:248]
+INFO: [Synth 8-638] synthesizing module 'ttcvi_emulation' [C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc_encoder/ttcvi_emulation.vhd:57]
+	Parameter include_hamming bound to: 1 - type: bool 
+INFO: [Synth 8-3491] module 'ttcvi_encoder' declared at 'C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc_encoder/ttcvi_encoder.vhd:72' bound to instance 'ins_chb_data' of component 'ttcvi_encoder' [C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc_encoder/ttcvi_emulation.vhd:306]
+INFO: [Synth 8-638] synthesizing module 'ttcvi_encoder' [C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc_encoder/ttcvi_encoder.vhd:97]
+	Parameter include_hamming bound to: 1 - type: bool 
+INFO: [Synth 8-256] done synthesizing module 'ttcvi_encoder' (8#1) [C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc_encoder/ttcvi_encoder.vhd:97]
+INFO: [Synth 8-256] done synthesizing module 'ttcvi_emulation' (9#1) [C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc_encoder/ttcvi_emulation.vhd:57]
+INFO: [Synth 8-3491] module 'ttcvx_emulation' declared at 'C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc_encoder/ttcvx_emulation.vhd:35' bound to instance 'ins_ttcvx' of component 'ttcvx_emulation' [C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc_encoder/ttc_enc_wrapper.vhd:265]
+INFO: [Synth 8-638] synthesizing module 'ttcvx_emulation' [C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc_encoder/ttcvx_emulation.vhd:52]
+INFO: [Synth 8-3491] module 'd_ff' declared at 'C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc_encoder/d_ff.vhd:35' bound to instance 'ins_dff' of component 'd_ff' [C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc_encoder/ttcvx_emulation.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'd_ff' [C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc_encoder/d_ff.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'd_ff' (10#1) [C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc_encoder/d_ff.vhd:44]
+INFO: [Synth 8-3491] module 'jk_ff' declared at 'C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc_encoder/jk_ff.vhd:35' bound to instance 'ins_jk' of component 'jk_ff' [C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc_encoder/ttcvx_emulation.vhd:104]
+INFO: [Synth 8-638] synthesizing module 'jk_ff' [C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc_encoder/jk_ff.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'jk_ff' (11#1) [C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc_encoder/jk_ff.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'ttcvx_emulation' (12#1) [C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc_encoder/ttcvx_emulation.vhd:52]
+INFO: [Synth 8-256] done synthesizing module 'ttc_enc_wrapper' (13#1) [C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc_encoder/ttc_enc_wrapper.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'ttc_encoder_data_gen' (14#1) [C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc_encoder/ttc_encoder_data_gen.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'top' (15#1) [C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/ttc/top.vhd:70]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 463.688 ; gain = 155.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 463.688 ; gain = 155.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k325tffg900-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 463.719 ; gain = 155.102
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k325tffg900-2
+INFO: [Synth 8-5545] ROM "cdr_lock" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "timer" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-802] inferred FSM for state register 'hamming.next_state_reg' in module 'serialb_com'
+INFO: [Synth 8-5544] ROM "communication_error" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "single_bit_error_i" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ttcvi_encoder'
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ttcvi_emulation'
+INFO: [Synth 8-5546] ROM "ready_rd_b_ch_s" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ready_rd_b_ch_s" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "ready_s" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "timer" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  s_idle |                              000 |                              000
+                   s_fmt |                              001 |                              001
+              s_get_data |                              010 |                              010
+         s_get_broadcast |                              011 |                              011
+                  s_stop |                              100 |                              100
+                 s_error |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'hamming.next_state_reg' using encoding 'sequential' in module 'serialb_com'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    init |                               00 |                               00
+                     brc |                               01 |                               01
+                ind_addr |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'ttcvi_encoder'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+             s0_ready_rd |                              000 |                              000
+                 s1_wait |                              001 |                              001
+           s2_start_data |                              010 |                              010
+                  s3_brc |                              011 |                              011
+                 s3_addr |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'ttcvi_emulation'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 508.770 ; gain = 200.152
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 4     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      7 Bit         XORs := 1     
+	   2 Input      5 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 11    
+	   3 Input      1 Bit         XORs := 6     
+	   4 Input      1 Bit         XORs := 8     
+	   8 Input      1 Bit         XORs := 8     
+	  14 Input      1 Bit         XORs := 2     
+	  12 Input      1 Bit         XORs := 4     
+	  35 Input      1 Bit         XORs := 2     
++---Registers : 
+	               42 Bit    Registers := 1     
+	               39 Bit    Registers := 2     
+	               31 Bit    Registers := 2     
+	               14 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 4     
+	                6 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 39    
++---Muxes : 
+	   6 Input     42 Bit        Muxes := 2     
+	   2 Input     42 Bit        Muxes := 1     
+	   2 Input     39 Bit        Muxes := 6     
+	   6 Input     39 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     31 Bit        Muxes := 2     
+	   5 Input     31 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 4     
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 5     
+	   3 Input      6 Bit        Muxes := 3     
+	   5 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   3 Input      4 Bit        Muxes := 1     
+	  58 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 6     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 7     
+	   6 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 23    
+	  34 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 1     
+	  35 Input      1 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 6     
+	   3 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module cdr2a_b_clk 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module serialb_com 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      7 Bit         XORs := 1     
+	   2 Input      5 Bit         XORs := 1     
+	   3 Input      1 Bit         XORs := 3     
+	   4 Input      1 Bit         XORs := 4     
+	   8 Input      1 Bit         XORs := 4     
+	  14 Input      1 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 5     
+	  12 Input      1 Bit         XORs := 2     
+	  35 Input      1 Bit         XORs := 1     
++---Registers : 
+	               42 Bit    Registers := 1     
+	               39 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   6 Input     42 Bit        Muxes := 2     
+	   2 Input     42 Bit        Muxes := 1     
+	   2 Input     39 Bit        Muxes := 6     
+	   6 Input     39 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 1     
+	  58 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+	  34 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 1     
+	  35 Input      1 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 6     
+Module ttc_decoder_core 
+Detailed RTL Component Info : 
++---Registers : 
+	               14 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+Module ttc_data_generation 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+Module ttcvi_encoder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   3 Input      1 Bit         XORs := 3     
+	   4 Input      1 Bit         XORs := 4     
+	   8 Input      1 Bit         XORs := 4     
+	  14 Input      1 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 5     
+	  12 Input      1 Bit         XORs := 2     
+	  35 Input      1 Bit         XORs := 1     
++---Registers : 
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   3 Input      6 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 4     
+Module ttcvi_emulation 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 2     
+	   5 Input     31 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 4     
+	   3 Input      6 Bit        Muxes := 2     
+	   5 Input      6 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 6     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 5     
+Module d_ff 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module jk_ff 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module ttc_enc_wrapper 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 840 (col length:140)
+BRAMs: 890 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "ins_ttcrx/ttc_dec/from_cdr_to_AandB/timer" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "ins_ttcrx/ttc_dec/from_cdr_to_AandB/cdr_lock" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "ins_ttc_encoder/ins_ttc/timer" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "ins_ttc_encoder/ins_ttc/ready_s" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[33] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[34] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[35] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[36] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[37] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[38] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[39] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[40] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[41] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ins_ttcrx/ttc_dec/serialb_com0/hamming.test_init_reg )
+WARNING: [Synth 8-3332] Sequential element (ins_ttcrx/ttc_dec/serialb_com0/hamming.test_init_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[41]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[40]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[39]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[38]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[37]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[36]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[35]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[34]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[33]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[32]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[31]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[30]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[29]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[28]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[27]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[26]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[25]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[24]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[23]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[22]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[21]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[20]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[19]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[18]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[17]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[16]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[15]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[14]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[13]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[12]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[11]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[10]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[9]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[8]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ins_ttcrx/ttc_dec/serialb_com0/hamming.test_data_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ins_ttcrx/ttc_dec/serialb_com0/hamming.data_out_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ins_ttcrx/ttc_dec/serialb_com0/hamming.data_out_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ins_ttcrx/ttc_dec/serialb_com0/hamming.data_out_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ins_ttcrx/ttc_dec/serialb_com0/hamming.data_out_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (ins_ttcrx/ttc_dec/serialb_com0/hamming.data_out_reg[0]) is unused and will be removed from module top.
+INFO: [Synth 8-3886] merging instance 'ins_ttc_encoder/ins_ttc_data_generation/valid_addr_data_s_reg' (FDC) to 'ins_ttc_encoder/ins_ttc_data_generation/addr_data_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ins_ttc_encoder/ins_ttc_data_generation/addr_data_s_reg[0]' (FDC) to 'ins_ttc_encoder/ins_ttc_data_generation/addr_data_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ins_ttc_encoder/ins_ttc_data_generation/addr_data_s_reg[1]' (FDC) to 'ins_ttc_encoder/ins_ttc_data_generation/addr_data_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ins_ttc_encoder/ins_ttc_data_generation/addr_data_s_reg[2]' (FDC) to 'ins_ttc_encoder/ins_ttc_data_generation/addr_data_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ins_ttc_encoder/ins_ttc_data_generation/addr_data_s_reg[3]' (FDC) to 'ins_ttc_encoder/ins_ttc_data_generation/addr_data_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ins_ttc_encoder/ins_ttc_data_generation/addr_data_s_reg[4]' (FDC) to 'ins_ttc_encoder/ins_ttc_data_generation/addr_data_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ins_ttc_encoder/ins_ttc_data_generation/addr_data_s_reg[5]' (FDC) to 'ins_ttc_encoder/ins_ttc_data_generation/addr_data_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ins_ttc_encoder/ins_ttc_data_generation/addr_data_s_reg[6]' (FDC) to 'ins_ttc_encoder/ins_ttc_data_generation/addr_data_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ins_ttc_encoder/ins_ttc_data_generation/addr_data_s_reg[7]' (FDC) to 'ins_ttc_encoder/ins_ttc_data_generation/addr_data_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ins_ttc_encoder/ins_ttc_data_generation/addr_data_s_reg[8]' (FDC) to 'ins_ttc_encoder/ins_ttc_data_generation/addr_data_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ins_ttc_encoder/ins_ttc_data_generation/addr_data_s_reg[9]' (FDC) to 'ins_ttc_encoder/ins_ttc_data_generation/addr_data_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ins_ttc_encoder/ins_ttc_data_generation/addr_data_s_reg[10]' (FDC) to 'ins_ttc_encoder/ins_ttc_data_generation/addr_data_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ins_ttc_encoder/ins_ttc_data_generation/addr_data_s_reg[11]' (FDC) to 'ins_ttc_encoder/ins_ttc_data_generation/addr_data_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ins_ttc_encoder/ins_ttc_data_generation/addr_data_s_reg[12]' (FDC) to 'ins_ttc_encoder/ins_ttc_data_generation/addr_data_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ins_ttc_encoder/ins_ttc_data_generation/addr_data_s_reg[13]' (FDC) to 'ins_ttc_encoder/ins_ttc_data_generation/addr_data_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ins_ttc_encoder/ins_ttc_data_generation/addr_data_s_reg[14]' (FDC) to 'ins_ttc_encoder/ins_ttc_data_generation/addr_data_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ins_ttc_encoder/ins_ttc_data_generation/addr_data_s_reg[15]' (FDC) to 'ins_ttc_encoder/ins_ttc_data_generation/addr_data_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ins_ttc_encoder/ins_ttc_data_generation/addr_data_s_reg[16]' (FDC) to 'ins_ttc_encoder/ins_ttc_data_generation/addr_data_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ins_ttc_encoder/ins_ttc_data_generation/addr_data_s_reg[17]' (FDC) to 'ins_ttc_encoder/ins_ttc_data_generation/addr_data_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ins_ttc_encoder/ins_ttc_data_generation/addr_data_s_reg[18]' (FDC) to 'ins_ttc_encoder/ins_ttc_data_generation/addr_data_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ins_ttc_encoder/ins_ttc_data_generation/addr_data_s_reg[19]' (FDC) to 'ins_ttc_encoder/ins_ttc_data_generation/addr_data_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ins_ttc_encoder/ins_ttc_data_generation/addr_data_s_reg[20]' (FDC) to 'ins_ttc_encoder/ins_ttc_data_generation/addr_data_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ins_ttc_encoder/ins_ttc_data_generation/addr_data_s_reg[21]' (FDC) to 'ins_ttc_encoder/ins_ttc_data_generation/addr_data_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ins_ttc_encoder/ins_ttc_data_generation/addr_data_s_reg[22]' (FDC) to 'ins_ttc_encoder/ins_ttc_data_generation/addr_data_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ins_ttc_encoder/ins_ttc_data_generation/addr_data_s_reg[23]' (FDC) to 'ins_ttc_encoder/ins_ttc_data_generation/addr_data_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ins_ttc_encoder/ins_ttc_data_generation/addr_data_s_reg[24]' (FDC) to 'ins_ttc_encoder/ins_ttc_data_generation/addr_data_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ins_ttc_encoder/ins_ttc_data_generation/addr_data_s_reg[25]' (FDC) to 'ins_ttc_encoder/ins_ttc_data_generation/addr_data_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ins_ttc_encoder/ins_ttc_data_generation/addr_data_s_reg[26]' (FDC) to 'ins_ttc_encoder/ins_ttc_data_generation/addr_data_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ins_ttc_encoder/ins_ttc_data_generation/addr_data_s_reg[27]' (FDC) to 'ins_ttc_encoder/ins_ttc_data_generation/addr_data_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ins_ttc_encoder/ins_ttc_data_generation/addr_data_s_reg[28]' (FDC) to 'ins_ttc_encoder/ins_ttc_data_generation/addr_data_s_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ins_ttc_encoder/ins_ttc_data_generation/addr_data_s_reg[29]' (FDC) to 'ins_ttc_encoder/ins_ttc_data_generation/addr_data_s_reg[30]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ins_ttc_encoder/ins_ttc_data_generation /\addr_data_s_reg[30] )
+WARNING: [Synth 8-3332] Sequential element (addr_data_s_reg[30]) is unused and will be removed from module ttc_data_generation.
+WARNING: [Synth 8-3332] Sequential element (b_ch_brc_counter_data_reg[8]) is unused and will be removed from module ttc_data_generation.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 713.449 ; gain = 404.832
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 713.449 ; gain = 404.832
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 713.449 ; gain = 404.832
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 713.449 ; gain = 404.832
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 713.449 ; gain = 404.832
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 713.449 ; gain = 404.832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 713.449 ; gain = 404.832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 713.449 ; gain = 404.832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 713.449 ; gain = 404.832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     9|
+|2     |CARRY4     |    16|
+|3     |LUT1       |    72|
+|4     |LUT2       |    60|
+|5     |LUT3       |    77|
+|6     |LUT4       |    52|
+|7     |LUT5       |    55|
+|8     |LUT6       |   175|
+|9     |MMCME2_ADV |     1|
+|10    |MMCM_ADV   |     1|
+|11    |MUXF7      |     3|
+|12    |FDCE       |   171|
+|13    |FDPE       |     8|
+|14    |FDRE       |   130|
+|15    |FDSE       |     4|
+|16    |IBUF       |     1|
+|17    |IBUFDS     |     1|
+|18    |OBUF       |    51|
++------+-----------+------+
+
+Report Instance Areas: 
++------+----------------------------+---------------------+------+
+|      |Instance                    |Module               |Cells |
++------+----------------------------+---------------------+------+
+|1     |top                         |                     |   887|
+|2     |  ins_ttc_encoder           |ttc_encoder_data_gen |   365|
+|3     |    ins_ttc_data_generation |ttc_data_generation  |    49|
+|4     |    ins_ttc                 |ttc_enc_wrapper      |   316|
+|5     |      ins_ttcvx             |ttcvx_emulation      |     5|
+|6     |        ins_dff             |d_ff                 |     3|
+|7     |        ins_jk              |jk_ff                |     2|
+|8     |      ins_clk_wizard        |mmcm                 |     9|
+|9     |      ins_ttcvi             |ttcvi_emulation      |   213|
+|10    |        ins_chb_data        |ttcvi_encoder        |    89|
+|11    |  ins_ttcrx                 |ttc_fmc_wrapper      |   470|
+|12    |    pll                     |pll_160MHz           |     3|
+|13    |    ttc_dec                 |ttc_decoder_core     |   467|
+|14    |      from_cdr_to_AandB     |cdr2a_b_clk          |   143|
+|15    |      serialb_com0          |serialb_com          |   279|
++------+----------------------------+---------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 713.449 ; gain = 404.832
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 52 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 713.449 ; gain = 404.832
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 713.449 ; gain = 404.832
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 23 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  MMCM_ADV => MMCME2_ADV: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+163 Infos, 52 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 763.574 ; gain = 467.609
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/vivado/encoder/encoder.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.111 . Memory (MB): peak = 763.574 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 21 18:13:16 2018...

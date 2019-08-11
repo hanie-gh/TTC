@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Thu Nov 22 13:59:59 2018
+# Process ID: 7160
+# Current directory: D:/document/project/2018_11_21_ttctx2ttcrx/vivado/encoder
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4236 D:\document\project\2018_11_21_ttctx2ttcrx\vivado\encoder\encoder.xpr
+# Log file: D:/document/project/2018_11_21_ttctx2ttcrx/vivado/encoder/vivado.log
+# Journal file: D:/document/project/2018_11_21_ttctx2ttcrx/vivado/encoder\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/document/project/2018_11_21_ttctx2ttcrx/vivado/encoder/encoder.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Amoozegar/Desktop/hgh/project/2018_11_21_ttctx2ttcrx/vivado/encoder' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Tools/vivado201801/Vivado/2018.1/data/ip'.
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 872.090 ; gain = 165.418
+update_compile_order -fileset sources_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Nov 22 14:00:36 2018] Launched impl_1...
+Run output will be captured here: D:/document/project/2018_11_21_ttctx2ttcrx/vivado/encoder/encoder.runs/impl_1/runme.log
+open_hw
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Nov 22 14:02:09 2018] Launched impl_1...
+Run output will be captured here: D:/document/project/2018_11_21_ttctx2ttcrx/vivado/encoder/encoder.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 22 14:02:38 2018...

@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Webtalk v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sat Oct  6 14:29:56 2018
+# Process ID: 7532
+# Current directory: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim/xsim.dir/tb_ttc_data_generation_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim/xsim.dir/tb_ttc_data_generation_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/vivado/encoder/encoder.sim/sim_1/behav/xsim/xsim.dir/tb_ttc_data_generation_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sat Oct  6 14:30:03 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2018.1/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 53.309 ; gain = 1.191
+INFO: [Common 17-206] Exiting Webtalk at Sat Oct  6 14:30:03 2018...

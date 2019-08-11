@@ -1,0 +1,55 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Thu Nov 15 12:07:11 2018
+# Process ID: 4956
+# Current directory: C:/Users/Amoozegar/Desktop/2018_10_05_ttctx2ttcrx/vivado/encoder
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4524 C:\Users\Amoozegar\Desktop\2018_10_05_ttctx2ttcrx\vivado\encoder\encoder.xpr
+# Log file: C:/Users/Amoozegar/Desktop/2018_10_05_ttctx2ttcrx/vivado/encoder/vivado.log
+# Journal file: C:/Users/Amoozegar/Desktop/2018_10_05_ttctx2ttcrx/vivado/encoder\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Amoozegar/Desktop/2018_10_05_ttctx2ttcrx/vivado/encoder/encoder.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+add_files -norecurse C:/Users/Amoozegar/Desktop/2018_10_05_ttctx2ttcrx/ttc_encoder/ttc_encoder_data_gen.vhd
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1 -prev_step 
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+launch_simulation -mode post-implementation -type timing
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse C:/Users/Amoozegar/Desktop/2018_10_05_ttctx2ttcrx/tb/tb_top.vhd
+launch_simulation -mode post-implementation -type timing
+source tb_top.tcl
+run 10 ms
+current_wave_config {Untitled 1}
+add_wave {{/tb_top/ins_top/ins_ttcrx/CLK_IN1}} {{/tb_top/ins_top/ins_ttcrx/D}} 
+restart
+run 10 ms
+current_wave_config {Untitled 1*}
+add_wave {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/a_ch_data_out}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/addr_data_out}} {{/tb_top/ins_top/ins_ttc_encoder/ins_ttc/brc_data_out}} 
+restart
+run 10 ms
+close_sim

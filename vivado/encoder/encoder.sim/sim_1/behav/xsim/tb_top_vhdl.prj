@@ -1,0 +1,21 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../../ttc_decoder/TTC_hamming_decoder_alme.vhd" \
+"../../../../../../ttc_decoder/cdr2a_b_clk.vhd" \
+"../../../../../../ttc_encoder/d_ff.vhd" \
+"../../../../../../ttc_encoder/jk_ff.vhd" \
+"../../../../../../ttc_encoder/mmcm.vhdl" \
+"../../../../../../ttc_decoder/pll_160MHz.vhd" \
+"../../../../../../ttc/top.vhd" \
+"../../../../../../ttc_encoder/ttc_data_generation.vhd" \
+"../../../../../../ttc_decoder/ttc_decoder_core.vhd" \
+"../../../../../../ttc_encoder/ttc_enc_wrapper.vhd" \
+"../../../../../../ttc_encoder/ttc_encoder_data_gen.vhd" \
+"../../../../../../ttc_decoder/ttc_fmc_wrapper_xilinx.vhd" \
+"../../../../../../ttc_encoder/ttcvi_emulation.vhd" \
+"../../../../../../ttc_encoder/ttcvi_encoder.vhd" \
+"../../../../../../ttc_encoder/ttcvx_emulation.vhd" \
+"../../../../../../tb/tb_top.vhd" \
+
+# Do not sort compile order
+nosort

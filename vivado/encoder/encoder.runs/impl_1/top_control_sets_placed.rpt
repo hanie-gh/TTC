@@ -1,0 +1,98 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Wed Nov 21 18:13:54 2018
+| Host         : Amoozegar-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7k325t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    27 |
+| Unused register locations in slices containing registers |   111 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            8 |
+|      4 |            3 |
+|      5 |            2 |
+|      6 |            2 |
+|      8 |            3 |
+|     10 |            1 |
+|     11 |            1 |
+|    16+ |            7 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               5 |            3 |
+| No           | No                    | Yes                    |              42 |           18 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |              40 |           19 |
+| Yes          | No                    | Yes                    |             137 |           42 |
+| Yes          | Yes                   | No                     |              89 |           31 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------------------------------+---------------------------------------------------------------+-------------------------------------------------------------+------------------+----------------+
+|                      Clock Signal                     |                         Enable Signal                         |                       Set/Reset Signal                      | Slice Load Count | Bel Load Count |
++-------------------------------------------------------+---------------------------------------------------------------+-------------------------------------------------------------+------------------+----------------+
+|  ins_ttc_encoder/ins_ttc/ins_clk_wizard/clk_out_80_n  |                                                               | ins_ttc_encoder/ins_ttc/ins_ttcvi/ins_chb_data/AR[0]        |                1 |              1 |
+|  ins_ttc_encoder/ins_ttc/ins_clk_wizard/clk_out_40_p  |                                                               |                                                             |                1 |              1 |
+|  ins_ttc_encoder/ins_ttc/ins_clk_wizard/clk_out_40_p  |                                                               | ins_ttc_encoder/ins_ttc/ready_s_i_2_n_0                     |                1 |              1 |
+|  ins_ttc_encoder/ins_ttc/ins_clk_wizard/clk_out_160_n |                                                               | ins_ttc_encoder/ins_ttc/ins_ttcvi/ins_chb_data/AR[0]        |                1 |              1 |
+|  ins_ttcrx/pll/CLK_OUT1                               |                                                               | ins_ttcrx/ttc_dec/from_cdr_to_AandB/cdr_lock_i_2_n_0        |                1 |              1 |
+|  ins_ttcrx/pll/CLK_OUT1                               | ins_ttcrx/ttc_dec/from_cdr_to_AandB/div_nrst_i_1_n_0          | ins_ttcrx/ttc_dec/from_cdr_to_AandB/toggle_cnt[1]_i_2_n_0   |                1 |              1 |
+|  ins_ttcrx/pll/CLK_OUT1                               | ins_ttcrx/ttc_dec/from_cdr_to_AandB/toggle_channel            |                                                             |                1 |              1 |
+|  ins_ttcrx/pll/CLK_OUT1                               | ins_ttcrx/ttc_dec/from_cdr_to_AandB/ttc_strobe                | ins_ttcrx/ttc_dec/from_cdr_to_AandB/communication_error_reg |                1 |              1 |
+|  ins_ttc_encoder/ins_ttc/ins_clk_wizard/clk_out_40_p  | ins_ttc_encoder/ins_ttc/ins_ttcvi/ins_chb_data/counter_brc_0  | ins_ttc_encoder/ins_ttc/ins_ttcvi/ins_chb_data/AR[0]        |                2 |              4 |
+|  ins_ttcrx/pll/CLK_OUT1                               |                                                               |                                                             |                2 |              4 |
+|  ins_ttcrx/pll/CLK_OUT1                               | ins_ttcrx/ttc_dec/from_cdr_to_AandB/strng_length0             | ins_ttcrx/ttc_dec/from_cdr_to_AandB/toggle_cnt[1]_i_2_n_0   |                1 |              4 |
+|  ins_ttcrx/pll/CLK_OUT1                               | ins_ttcrx/ttc_dec/from_cdr_to_AandB/div_rst_cnt[4]_i_1_n_0    | ins_ttcrx/ttc_dec/from_cdr_to_AandB/toggle_cnt[1]_i_2_n_0   |                2 |              5 |
+|  ins_ttcrx/pll/CLK_OUT1                               | ins_ttcrx/ttc_dec/from_cdr_to_AandB/ttc_strobe                |                                                             |                2 |              5 |
+|  ins_ttc_encoder/ins_ttc/ins_clk_wizard/clk_out_40_p  | ins_ttc_encoder/ins_ttc/ins_ttcvi/ins_chb_data/counter_addr_1 | ins_ttc_encoder/ins_ttc/ins_ttcvi/ins_chb_data/AR[0]        |                3 |              6 |
+|  ins_ttc_encoder/ins_ttc/ins_clk_wizard/clk_out_160_p | ins_ttc_encoder/ins_ttc/ready_a_ch_in                         | reset_in_IBUF                                               |                1 |              6 |
+|  ins_ttc_encoder/ins_ttc/ins_clk_wizard/clk_out_40_p  | ins_ttc_encoder/ins_ttc/ins_ttcvi/b_ch_brc_s                  | ins_ttc_encoder/ins_ttc/ins_ttcvi/ins_chb_data/AR[0]        |                3 |              8 |
+|  ins_ttc_encoder/ins_ttc/ins_clk_wizard/clk_out_160_p | ins_ttc_encoder/ins_ttc/ins_ttcvi/ready_b_ch_in               | reset_in_IBUF                                               |                2 |              8 |
+|  ins_ttcrx/pll/CLK_OUT1                               | ins_ttcrx/ttc_dec/from_cdr_to_AandB/ttc_strobe                | ins_ttcrx/ttc_dec/from_cdr_to_AandB/brc_t2_reg[1]           |                1 |              8 |
+|  ins_ttcrx/pll/CLK_OUT1                               |                                                               | ins_ttcrx/ttc_dec/from_cdr_to_AandB/toggle_cnt[1]_i_2_n_0   |                3 |             10 |
+|  ins_ttc_encoder/ins_ttc/ins_clk_wizard/clk_out_160_p |                                                               | reset_in_IBUF                                               |                3 |             11 |
+|  ins_ttc_encoder/ins_ttc/ins_clk_wizard/clk_out_40_p  |                                                               | ins_ttc_encoder/ins_ttc/ins_ttcvi/ins_chb_data/AR[0]        |                8 |             17 |
+|  ins_ttc_encoder/ins_ttc/ins_clk_wizard/clk_out_40_p  | ins_ttc_encoder/ins_ttc/ins_ttcvi/b_ch_addr_s                 | ins_ttc_encoder/ins_ttc/ins_ttcvi/ins_chb_data/AR[0]        |               11 |             31 |
+|  ins_ttcrx/pll/CLK_OUT1                               | ins_ttcrx/ttc_dec/from_cdr_to_AandB/ttc_strobe                | ins_ttcrx/ttc_dec/from_cdr_to_AandB/add_a14_reg[13]         |                6 |             31 |
+|  ins_ttc_encoder/ins_ttc/ins_clk_wizard/clk_out_40_p  | ins_ttc_encoder/ins_ttc/timer[0]_i_1_n_0                      | ins_ttc_encoder/ins_ttc/ready_s_i_2_n_0                     |                8 |             32 |
+|  ins_ttcrx/pll/CLK_OUT1                               | ins_ttcrx/ttc_dec/from_cdr_to_AandB/timer[0]_i_1__0_n_0       | ins_ttcrx/ttc_dec/from_cdr_to_AandB/cdr_lock_i_2_n_0        |                8 |             32 |
+|  ins_ttcrx/pll/CLK_OUT1                               | ins_ttcrx/ttc_dec/from_cdr_to_AandB/E[0]                      |                                                             |               16 |             34 |
+|  ins_ttcrx/pll/CLK_OUT1                               | ins_ttcrx/ttc_dec/from_cdr_to_AandB/ttc_strobe                | ins_ttcrx/ttc_dec/from_cdr_to_AandB/SR[0]                   |               23 |             49 |
++-------------------------------------------------------+---------------------------------------------------------------+-------------------------------------------------------------+------------------+----------------+
+
+

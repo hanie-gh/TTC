@@ -1,0 +1,22 @@
+0.6
+2018.1
+Apr  4 2018
+19:30:32
+C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/tb/tb_top.vhd,1538829239,vhdl,,,,tb_top,,,,,,,,
+C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/tb/tb_ttc_data_generation.vhd,1538818855,vhdl,,,,tb_ttc_data_generation,,,,,,,,
+C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/tb/tb_ttc_encoder_data_generation.vhd,1538819154,vhdl,,,,tb_ttc_encoder_data_generation,,,,,,,,
+C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/ttc/top.vhd,1538829184,vhdl,,,,top,,,,,,,,
+C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/ttc_decoder/TTC_hamming_decoder_alme.vhd,1530781476,vhdl,C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/ttc_decoder/ttc_decoder_core.vhd,,,serialb_com,,,,,,,,
+C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/ttc_decoder/cdr2a_b_clk.vhd,1531377755,vhdl,C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/ttc_decoder/ttc_decoder_core.vhd,,,cdr2a_b_clk,,,,,,,,
+C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/ttc_decoder/pll_160MHz.vhd,1377769522,vhdl,C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/ttc_decoder/ttc_fmc_wrapper_xilinx.vhd,,,pll_160mhz,,,,,,,,
+C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/ttc_decoder/ttc_decoder_core.vhd,1535355332,vhdl,C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/ttc_decoder/ttc_fmc_wrapper_xilinx.vhd,,,ttc_decoder_core,,,,,,,,
+C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/ttc_decoder/ttc_fmc_wrapper_xilinx.vhd,1531408089,vhdl,,,,ttc_fmc_wrapper,,,,,,,,
+C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/ttc_encoder/d_ff.vhd,1538727006,vhdl,,,,d_ff,,,,,,,,
+C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/ttc_encoder/jk_ff.vhd,1538727017,vhdl,,,,jk_ff,,,,,,,,
+C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/ttc_encoder/mmcm.vhdl,1538826727,vhdl,,,,mmcm,,,,,,,,
+C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/ttc_encoder/ttc_data_generation.vhd,1538849701,vhdl,,,,ttc_data_generation,,,,,,,,
+C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/ttc_encoder/ttc_enc_wrapper.vhd,1538826691,vhdl,,,,ttc_enc_wrapper,,,,,,,,
+C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/ttc_encoder/ttc_encoder_data_gen.vhd,1538826630,vhdl,,,,ttc_encoder_data_gen,,,,,,,,
+C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/ttc_encoder/ttcvi_emulation.vhd,1538842514,vhdl,,,,ttcvi_emulation,,,,,,,,
+C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/ttc_encoder/ttcvi_encoder.vhd,1538727333,vhdl,,,,ttcvi_encoder,,,,,,,,
+C:/Users/hanie/Documents/project/2018_10_03_ttctx2ttcrx/ttc_encoder/ttcvx_emulation.vhd,1538761366,vhdl,,,,ttcvx_emulation,,,,,,,,

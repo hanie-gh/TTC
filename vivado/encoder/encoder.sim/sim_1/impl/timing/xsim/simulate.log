@@ -1,0 +1,10 @@
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+Note: simulation started
+Time: 100 ns  Iteration: 0  Process: /tb_top/line__148  File: C:/Users/Amoozegar/Desktop/2018_10_05_ttctx2ttcrx/tb/tb_top.vhd
+Note: simulation started
+Time: 100 ns  Iteration: 0  Process: /tb_top/line__148  File: C:/Users/Amoozegar/Desktop/2018_10_05_ttctx2ttcrx/tb/tb_top.vhd
+Note: simulation started
+Time: 100 ns  Iteration: 0  Process: /tb_top/line__148  File: C:/Users/Amoozegar/Desktop/2018_10_05_ttctx2ttcrx/tb/tb_top.vhd
+Note: simulation finished
+Time: 5 ms  Iteration: 0  Process: /tb_top/line__145  File: C:/Users/Amoozegar/Desktop/2018_10_05_ttctx2ttcrx/tb/tb_top.vhd

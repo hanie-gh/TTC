@@ -1,0 +1,44 @@
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto c5fa44d5fb1046d0b321c20e8140b53c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling architecture mmcme2_adv_v of entity unisim.MMCME2_ADV [\MMCME2_ADV(clkfbout_mult_f=25.0...]
+Compiling architecture mmcm_adv_v of entity unisim.MMCM_ADV [\MMCM_ADV(clkfbout_mult_f=25.0,c...]
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture xilinx of entity xil_defaultlib.pll_160MHz [pll_160mhz_default]
+Compiling architecture behavioral of entity xil_defaultlib.cdr2a_b_clk [cdr2a_b_clk_default]
+Compiling architecture arc of entity xil_defaultlib.serialb_com [\serialb_com(include_hamming=tru...]
+Compiling architecture core of entity xil_defaultlib.ttc_decoder_core [ttc_decoder_core_default]
+Compiling architecture top of entity xil_defaultlib.ttc_fmc_wrapper [ttc_fmc_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttc_data_generation [ttc_data_generation_default]
+Compiling architecture rtl of entity xil_defaultlib.d_ff [d_ff_default]
+Compiling architecture ibufds_v of entity unisim.IBUFDS [\IBUFDS(iostandard="default")(1,...]
+Compiling architecture mmcme2_adv_v of entity unisim.MMCME2_ADV [\MMCME2_ADV(bandwidth="optimized...]
+Compiling architecture structure of entity xil_defaultlib.mmcm [mmcm_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttcvi_encoder [\ttcvi_encoder(include_hamming=t...]
+Compiling architecture behavioral of entity xil_defaultlib.ttcvi_emulation [ttcvi_emulation_default]
+Compiling architecture rtl of entity xil_defaultlib.jk_ff [jk_ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttcvx_emulation [ttcvx_emulation_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttc_enc_wrapper [ttc_enc_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.ttc_encoder_data_gen [ttc_encoder_data_gen_default]
+Compiling architecture behavioral of entity xil_defaultlib.top [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_top
+Built simulation snapshot tb_top_behav
